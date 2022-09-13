@@ -122,7 +122,9 @@
     width: 100%;
     text-align: left;
   }
-
+  .navbar_white .navbar-nav li a {
+    color: #000 !important;
+  }
   .navbar_wrap {
     display: flex;
     flex-flow: row-reverse;
@@ -316,9 +318,7 @@
   .footer_list_item-last {
     margin-top: 73px;
   }
-  .ind_text {
-    font-size: 14px;
-  }
+
   .ind_list_item {
     margin-bottom: 5px;
     margin-right: 10px;
@@ -462,9 +462,7 @@
   .ind_list_item span {
     font-size: 16px;
   }
-  .ind_text {
-    font-size: 12px;
-  }
+ 
 }
 
 /* Iphone 6.7.8 */
@@ -504,7 +502,7 @@
   }
 
   .main_block_wrap {
-    padding: 12px;
+    padding: 10px;
   }
 
 
