@@ -1197,6 +1197,15 @@
     <script src="js/main.js"></script>
     <script>
       $(document).ready(function () {
+        window.addEventListener('hashchange', function () {
+          console.log(window.location.hash );
+          if (window.location.hash != '#keys' && window.location.hash != '#work'){
+           setTimeout(function() {
+            $('body').css({backgroundColor:'#fff'})
+           },50)
+          
+          }
+        });
         $("#fullpage").fullpage({
           menu: "#navigation",
 
@@ -1207,6 +1216,7 @@
               $(".navbar-brand ").append(
                 ' <img src="img/logo-white.svg" alt=""/>'
               );
+              $('body').css({backgroundColor:'#333'})
             } else {
               $(".section-nav").removeClass("navbar_white");
               $(".navbar-brand img").remove();
