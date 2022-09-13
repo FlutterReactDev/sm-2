@@ -235,6 +235,20 @@
 
     padding: 10px 0 10px 0;
   }
+  .card-header button {
+    font-size: 16px;
+    padding: 4px 20px;
+  }
+  .about_card img {
+    max-height: 250px;
+  }
+  .about_wrap {
+    margin: 0;
+}
+    .card-body {
+    font-size: 14px;
+    padding: 0px 0 5px 20px;
+  }
   .main_img-mobi {
     display: block;
   }
@@ -333,7 +347,18 @@
   .row_main2 {
     display: none;
   }
-
+  .technology_list {
+    display: flex;
+  }
+  .about_card img {
+    max-height: 220px;
+  }
+  .technology_title {
+    font-size: 32px;
+  }
+  #myCanvasContainer {
+    display: none;
+  }
   .main_block_wrap {
     padding: 32px 12px 12px 13px;
   }
@@ -378,10 +403,7 @@
     padding: 0;
   }
 
-  .technology_list_item {
-    margin-right: 20px;
-    margin-bottom: 20px;
-  }
+  
 
   .article_title {
     font-size: 32px;
@@ -402,6 +424,16 @@
 @media screen and (max-width: 480px) {
   .main_block_wrap {
     margin: 0 0 20px 0;
+  }
+  .card-header button {
+    font-size: 14px;
+  }
+  .card-header {
+    margin: 0 0 5px 0;
+  }
+  .technology_list_item a {
+    font-size: 12px;
+    padding: 10px 20px;
   }
   .icon_top {
     margin: 0 0 10px 0;
@@ -424,9 +456,7 @@
   .btn_top {
     padding: 8px 0 6px 25px;
   }
-  .technology_list_item {
-    padding: 15px 15px;
-  }
+ 
   .blog_feed_title {
     font-size: 24px;
     margin: 0;
@@ -458,7 +488,9 @@
     font-family: "Jost-Light";
     color: #333333;
   }
-
+  .about_card img {
+    max-height: 150px;
+  }
   .ind_list_item span {
     font-size: 16px;
   }

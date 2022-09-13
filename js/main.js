@@ -45,10 +45,19 @@ $(document).ready(function () {
       "<button type='button' class='slick-next pull-right'><img src='img/slider-arrow-right.svg' alt=''/></button>",
   });
   $(".nav-link ").click(function (e) {
-   
     $(".nav-link ").removeClass("active");
+  
+  
   });
-
+  $(window).resize(function() {
+    if ($(window).width() < 767) {
+      $("canvas").attr("width", '600');
+      $("canvas").attr("height", '500');
+    }else {
+      $("canvas").attr("width", '800');
+      $("canvas").attr("height", '600');
+    }
+});
   incTab();
   cardsAnimation();
   slider();

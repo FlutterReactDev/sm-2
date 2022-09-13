@@ -285,7 +285,9 @@ footer {
 .nav-mobi {
   display: none !important;
 }
-
+.nav-tabs {
+  border:none;
+}
 .nav-tabs .nav-link {
   background: #333333;
   border-radius: 5px;
@@ -535,6 +537,7 @@ footer {
 
 .btn_top_wrap2 {
   display: none;
+  position: fixed;
 }
 
 .navbar_wrap {
@@ -564,14 +567,12 @@ footer {
 }
 
 .section_about {
-  margin: -63px 0 0 0;
+  
   background: #f7f9fa;
-  padding: 80px 0 0 0;
+
 }
 
-.section_about .fp-tableCell {
-  padding: 114px 0 0 0;
-}
+
 .about_cards {
   position: relative;
 }
@@ -607,6 +608,7 @@ footer {
 .section_technology {
   position: relative;
 }
+
 .section_technology::before {
   content: "";
   position: absolute;
@@ -626,7 +628,7 @@ footer {
   display: none;
   top: 0;
   left: 0;
-  right: 0;
+  right: -16px;
   bottom: 0;
 }
 .technologies_content {
@@ -635,33 +637,45 @@ footer {
   height: 100%;
   backdrop-filter: blur(10px);
   justify-content: center;
+  padding: 0 15px;
 }
 .technologies_tags {
   display: flex;
+  flex-wrap: wrap;
+  position: relative;
 }
+
 .tag_close_btn {
   cursor: pointer;
+  position: absolute;
+  top: -30px;
+  right: 0;
 }
 .technologies_tag {
   background: #333333;
   border-radius: 30px;
   color: #b6f214;
   padding: 15px 20px;
-  margin-left: 6px;
+  font-size: 16px;
+  margin:6px 6px ;
 }
 .technology_list {
   display: flex;
   flex-wrap: wrap;
-
+  display: none;
   justify-content: center;
 }
+.technology_list_item a{
+  border-radius: 38px;
+  padding: 10px 25px;
+  background: #fff;
+ font-size: 16px;
+}
+.technology_list_item {
+  margin: 13px 5px;
+}
 
-.technology_list_item--mt3 {
-  margin-top: 6px;
-}
-.technology_list_item--mt10 {
-  margin-top: 10px;
-}
+
 .brief_title {
   font-size: 50px;
   font-family: "Jost-SemiBold";
