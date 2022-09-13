@@ -211,6 +211,12 @@
   .dev_top {
     font-size: 13px;
   }
+  .section_keys2 .fp-tableCell{
+    padding: 0;
+  }
+  .section_about .fp-tableCell{
+    padding: 0;
+  }
   .main_img_hero {
     display: none;
   }
@@ -273,9 +279,7 @@
     margin: 0 auto;
     margin-top: 10px;
   }
-  .section_keys {
-    margin: 0;
-  }
+
   .main_title {
     font-size: 45.2609px;
     line-height: 97.5%;
@@ -337,9 +341,7 @@
     margin-bottom: 5px;
     margin-right: 10px;
   }
-  .fp-tableCell {
-    padding: 0 !important;
-  }
+ 
 }
 
 /* Ipad mini*/
@@ -360,7 +362,13 @@
     display: none;
   }
   .main_block_wrap {
-    padding: 32px 12px 12px 13px;
+    padding: 12px;
+  }
+  .icon_top {
+    margin-bottom: 10px;
+  }
+  .main_block_title {
+    font-size: 12px;
   }
 
   .btn_top_bg {
@@ -423,7 +431,7 @@
 /* Galaxy S8+*/
 @media screen and (max-width: 480px) {
   .main_block_wrap {
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
   }
   .card-header button {
     font-size: 14px;
@@ -436,7 +444,7 @@
     padding: 10px 20px;
   }
   .icon_top {
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
   }
   .key_title {
     margin: 0 0 5px 0;
@@ -561,7 +569,7 @@
   }
 
   .section_keys .fp-tableCell {
-    padding: 70px 0 0 0;
+
     background: #333333;
   }
 }

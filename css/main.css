@@ -547,7 +547,7 @@ footer {
   display: none;
 }
 
-.section_keys {
+.section_keys .fp-tableCell {
   background: #333333;
   margin-top: -62px;
   padding-top: 62px;
@@ -567,7 +567,8 @@ footer {
 }
 
 .section_about {
-  
+  margin-top: -61px;
+  padding-top: 60px;
   background: #f7f9fa;
 
 }
