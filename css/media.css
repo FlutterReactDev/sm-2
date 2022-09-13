@@ -1,0 +1,536 @@
+@media screen and (max-height: 880px) {
+  .row_main {
+    margin: 0 0 20px 0 !important;
+    padding: 0 0 20px !important;
+  }
+
+  .main_img img {
+    max-height: 290px;
+  }
+
+  .btn_top_wrap {
+    position: relative;
+    margin: 30px 0 0 0;
+  }
+
+  .main_title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+}
+
+/* стили для md-устройств */
+@media screen and (max-width: 1200px) {
+  .ind_list_item {
+    padding: 15px 20px;
+  }
+  .ind_list_item {
+    margin-bottom: 10px;
+    margin-right: 15px;
+  }
+  .ind_list_item span {
+    font-size: 25px;
+  }
+
+  .blog_feed_form {
+    display: block;
+  }
+  .blog_feed_btn {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .blog_list_item_title {
+    font-size: 18px;
+  }
+  .blog_list_item_text {
+    font-size: 12px;
+  }
+}
+
+/* стили для sm-устройств */
+@media screen and (max-width: 1024px) {
+}
+
+/* стили для sm-устройств */
+@media screen and (max-width: 991px) {
+  .main_block_wrap {
+    margin: 0 0 30px 0;
+  }
+
+  .row_main2 {
+    display: none;
+  }
+  .section_main2 {
+    display: block !important;
+  }
+
+  .nav-tabs .nav-link {
+    height: 330px;
+  }
+  #myTab {
+    display: none;
+  }
+  .nav_wrap {
+    display: block !important;
+  }
+  .nav-mobi {
+    display: block !important;
+  }
+  .nav-mobi .slick-slide {
+    margin: 0;
+  }
+  .link_bref {
+    display: inline-block;
+    margin: 10px 0 0 0;
+  }
+
+  #navigation > li {
+    margin: 0 0px 5px 0;
+  }
+
+  .tab-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 10px;
+  }
+  .tab-pane img {
+    max-height: 230px;
+  }
+  .nav-tabs .nav-link span {
+    font-size: 14px;
+    line-height: 23px;
+    display: block;
+    color: #ffffff;
+    margin: 20px 25px 20px 0;
+  }
+
+  .navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    background: #fff;
+    left: 0;
+    padding: 15px 15px 15px 15px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .navbar_wrap {
+    display: flex;
+    flex-flow: row-reverse;
+  }
+
+  .navbar-light .navbar-toggler {
+    border: none;
+    color: #000;
+    padding: 10px 8px 0 0px;
+    text-align: left;
+  }
+
+  .link_bref {
+    display: none;
+  }
+
+  .link_bref2 {
+    display: block;
+  }
+
+  .link_bref {
+    margin: 0px 0 0 0;
+  }
+  .ind_icons {
+    flex-direction: row;
+  }
+
+  .ind_line {
+    height: 3px;
+    width: 96px;
+    margin: 0 17px;
+  }
+  .ind_list_item {
+    padding: 5px 10px;
+  }
+  .ind_list_item img {
+    width: 20px;
+  }
+  .ind_text {
+    font-size: 16px;
+  }
+  .ind_title {
+    font-size: 32px;
+  }
+  .ind_list_item span {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .blog_list_item_title {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  .blog_list_item_text {
+    font-size: 10px;
+  }
+  .blog_list_item_btn {
+    font-size: 10px;
+  }
+  .key_title {
+    font-size: 32px;
+  }
+  .key_body {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .nav-tabs .nav-link {
+    height: 260px;
+  }
+
+  .main_title {
+    font-size: 49.2609px;
+    line-height: 97.5%;
+    position: relative;
+    font-family: "Jost-SemiBold";
+    margin-bottom: 19px;
+  }
+}
+
+/* Ipad*/
+@media screen and (max-width: 767px) {
+  .dev_top {
+    font-size: 13px;
+  }
+  .main_img_hero {
+    display: none;
+  }
+  .team_title {
+    font-size: 32px;
+  }
+  .team_title span {
+    font-size: 16px;
+  }
+  .team_block_wrap,.team_block_wrap2 {
+    padding: 10px 0 10px 0;
+  }
+  .team_img {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .team_img img {
+    max-height: 300px;
+  }
+  .about_title {
+    font-size: 32px;
+
+    padding: 10px 0 10px 0;
+  }
+  .main_img-mobi {
+    display: block;
+  }
+  .keys_list_wrap {
+    height: 195px;
+  }
+  .key_body {
+    font-size: 12px;
+    margin: 0 0 5px 0;
+    line-height: 18px;
+  }
+  .key_title {
+    margin: 0 0 10px 0;
+  }
+  .keys_list_item_title {
+    font-size: 18px;
+  }
+  .keys_list_item_text {
+    font-size: 16px;
+  }
+  .btn_key {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .section_keys {
+    margin: 0;
+  }
+  .main_title {
+    font-size: 45.2609px;
+    line-height: 97.5%;
+    position: relative;
+    font-family: "Jost-SemiBold";
+    margin-bottom: 19px;
+  }
+
+  .btn_top_wrap {
+    position: relative;
+    margin: 40px 0 0 0;
+  }
+
+  .row_main {
+    margin: 0 0 0 0 !important;
+  }
+
+  .main_block_wrap {
+    height: 180px;
+  }
+
+  .nav-tabs .nav-link span {
+    font-size: 14px;
+    line-height: 23px;
+    display: block;
+    color: #ffffff;
+    margin: 20px 10px 20px 0;
+  }
+
+  .nav-tabs .nav-link {
+    height: 230px;
+  }
+
+  .about_wrap {
+    margin-top: 100px;
+  }
+
+  .blog_list_item_title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .blog_list_item_text {
+    font-size: 16px;
+  }
+  .blog_list_item_btn {
+    font-size: 16px;
+  }
+  .footer_list_item {
+    text-align: center;
+  }
+  .footer_list_item-first {
+    margin-bottom: 73px;
+  }
+  .footer_list_item-last {
+    margin-top: 73px;
+  }
+  .ind_text {
+    font-size: 14px;
+  }
+  .ind_list_item {
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+  .fp-tableCell {
+    padding: 0 !important;
+  }
+}
+
+/* Ipad mini*/
+@media screen and (max-width: 640px) {
+  .row_main2 {
+    display: none;
+  }
+
+  .main_block_wrap {
+    padding: 32px 12px 12px 13px;
+  }
+
+  .btn_top_bg {
+    display: none;
+  }
+
+  .btn_top {
+    margin: 0 auto;
+    padding: 12px 0 10px 25px;
+  }
+  .btn_key {
+    margin-top: 10px;
+  }
+  .btn_top_wrap {
+    display: none;
+  }
+
+  .btn_top_wrap2 {
+    display: block;
+    margin: 60px 0 0 0;
+  }
+
+  .main_title {
+    font-size: 39px !important;
+    line-height: 97.5%;
+    position: relative;
+    font-family: "Jost-SemiBold";
+    margin-bottom: 19px;
+  }
+
+  .dev_top {
+    font-size: 14px;
+  }
+
+  .main_img img{
+    max-height: 270px;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .technology_list_item {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .article_title {
+    font-size: 32px;
+  }
+  .blog_list_item_title {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .blog_list_item_text {
+    font-size: 14px;
+  }
+  .blog_list_item_btn {
+    font-size: 14px;
+  }
+}
+
+/* Galaxy S8+*/
+@media screen and (max-width: 480px) {
+  .main_block_wrap {
+    margin: 0 0 20px 0;
+  }
+  .key_title {
+    margin: 0 0 5px 0;
+  }
+  .keys_list_wrap {
+    height: 140px;
+  }
+  .keys_list_item_text {
+    font-size: 14px;
+  }
+  .keys_list_item_title {
+    font-size: 16px;
+  }
+  .keys_list_item {
+    padding: 9px 15px;
+  }
+  .btn_top {
+    padding: 8px 0 6px 25px;
+  }
+  .technology_list_item {
+    padding: 15px 15px;
+  }
+  .blog_feed_title {
+    font-size: 24px;
+    margin: 0;
+  }
+  .blog_feed_text {
+    font-size: 16px;
+  }
+  .tag_list_item {
+    margin-right: 7px;
+    font-size: 14px;
+    padding: 6px 14px;
+  }
+  .blog_list_item_title {
+    font-size: 12px;
+  }
+  .blog_list_item_text {
+    font-size: 10px;
+  }
+  .blog_list_item_btn {
+    font-size: 10px;
+  }
+}
+
+/* Galaxy*/
+@media screen and (max-width: 391px) {
+  .main_block_title {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Jost-Light";
+    color: #333333;
+  }
+
+  .ind_list_item span {
+    font-size: 16px;
+  }
+  .ind_text {
+    font-size: 12px;
+  }
+}
+
+/* Iphone 6.7.8 */
+@media screen and (max-width: 376px) {
+  .dev_top {
+    font-size: 13px;
+  }
+
+  .main_title {
+    font-size: 37px !important;
+  }
+
+  .main_img {
+    margin: 7px 0 0 0;
+  }
+
+  .btn_top_wrap2 {
+    display: block;
+    margin: 20px 0 0 0;
+  }
+
+  .main_img {
+    height: auto;
+    text-align: center;
+  }
+
+  .main_img img {
+    height: 220px;
+  }
+
+  .main_img {
+    margin: 10px 0 0 0;
+  }
+
+  .main_block_wrap {
+    height: 166px;
+  }
+
+  .main_block_wrap {
+    padding: 22px 12px 12px 13px;
+  }
+
+  .main_block_title {
+    font-size: 14px;
+  }
+
+  .main_block_wrap {
+  }
+}
+
+/* Iphone 5.5SE */
+@media screen and (max-width: 320px) {
+}
+
+@media screen and (max-height: 900px) {
+  .nav-tabs .nav-link {
+    height: 260px;
+  }
+
+  .nav-tabs .nav-link span {
+    font-size: 15px;
+    line-height: 18px;
+    display: block;
+    color: #ffffff;
+    margin: 10px 25px 20px 0;
+  }
+
+  .section_keys .fp-tableCell {
+    padding: 70px 0 0 0;
+    background: #333333;
+  }
+}
