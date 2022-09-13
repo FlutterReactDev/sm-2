@@ -403,6 +403,9 @@
   .main_block_wrap {
     margin: 0 0 20px 0;
   }
+  .icon_top {
+    margin: 0 0 10px 0;
+  }
   .key_title {
     margin: 0 0 5px 0;
   }
@@ -450,7 +453,7 @@
 /* Galaxy*/
 @media screen and (max-width: 391px) {
   .main_block_title {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 18px;
     font-family: "Jost-Light";
     color: #333333;
@@ -501,12 +504,10 @@
   }
 
   .main_block_wrap {
-    padding: 22px 12px 12px 13px;
+    padding: 12px;
   }
 
-  .main_block_title {
-    font-size: 14px;
-  }
+
 
   .main_block_wrap {
   }
