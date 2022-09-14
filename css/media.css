@@ -5,7 +5,7 @@
   }
 
   .main_img img {
-    max-height: 290px;
+    max-height: 230px;
   }
 
   .btn_top_wrap {
@@ -246,7 +246,7 @@
     padding: 4px 20px;
   }
   .about_card img {
-    max-height: 250px;
+    max-height: 200px;
   }
   .about_wrap {
     margin: 0;
@@ -352,9 +352,7 @@
   .technology_list {
     display: flex;
   }
-  .about_card img {
-    max-height: 220px;
-  }
+  
   .technology_title {
     font-size: 32px;
   }
@@ -388,11 +386,11 @@
 
   .btn_top_wrap2 {
     display: block;
-    margin: 60px 0 0 0;
+    margin: 30px 0 0 0;
   }
 
   .main_title {
-    font-size: 39px !important;
+    font-size: 32px !important;
     line-height: 97.5%;
     position: relative;
     font-family: "Jost-SemiBold";
@@ -553,6 +551,7 @@
 
 /* Iphone 5.5SE */
 @media screen and (max-width: 320px) {
+
 }
 
 @media screen and (max-height: 900px) {

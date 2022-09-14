@@ -906,7 +906,26 @@
                     <div class="technologies_tag">1С</div>
                     <button class="tag_close_btn"><img src="img/tag-close.svg" alt=""></button>
                   </div>
-                  
+                  <div class="technologies_tags" data-content="code" >
+                    <div class="technologies_tag">ООП</div>
+                    <div class="technologies_tag">GRASP</div>
+                    <div class="technologies_tag">SOLID</div>
+                    <div class="technologies_tag">DRY</div>
+                    <div class="technologies_tag">KISS</div>
+                    <div class="technologies_tag">PHPUnit</div>
+                    <button class="tag_close_btn"><img src="img/tag-close.svg" alt=""></button>
+                  </div>
+                  <div class="technologies_tags" data-content="analytics">
+                    <div class="technologies_tag">Google Analytics</div>
+                    <div class="technologies_tag">Яндекс.Метрика</div>
+                    <button class="tag_close_btn"><img src="img/tag-close.svg" alt=""></button>
+                  </div>
+                  <div class="technologies_tags" data-content="design">
+                        <div class="technologies_tag">Customer Journey Mapping </div>
+                        <div class="technologies_tag">Sketch</div>
+                        <div class="technologies_tag">Axure</div>
+                        <button class="tag_close_btn"><img src="img/tag-close.svg" alt=""></button>
+                  </div>
                   </div>
                   
                 </div>
@@ -926,15 +945,15 @@
                     </li>
                      <li class="technology_list_item "><a data-content="database"> РАЗРАБОТКА БАЗ ДАННЫХ</a>
                     </li>
-                     <li class="technology_list_item "> <a>УПРАВЛЕНИЕ КОДОМ</a>  
+                     <li class="technology_list_item "> <a data-content="code">УПРАВЛЕНИЕ КОДОМ</a>  
                     </li>
                      <li class="technology_list_item"><a data-content="methodology"> УПРАВЛЕНИЕ ПРОЕКТАМИ</a>
                     </li>
                      <li class="technology_list_item "><a data-content="search">КОРПОРАТИВНЫЙ ПОИСК</a> 
                     </li>
-                     <li class="technology_list_item"><a> ВЕБ-АНАЛИТИКА</a>
+                     <li class="technology_list_item"><a data-content="analytics"> ВЕБ-АНАЛИТИКА</a>
                     </li>
-                     <li class="technology_list_item"><a>ПРОЕКТИРОВАНИЕ</a> 
+                     <li class="technology_list_item"><a data-content="design">ПРОЕКТИРОВАНИЕ</a> 
                     </li>
                   </ul>
                 </div>
@@ -948,15 +967,15 @@
                   </li>
                    <li class="technology_list_item "><a data-content="database"> РАЗРАБОТКА БАЗ ДАННЫХ</a>
                   </li>
-                   <li class="technology_list_item "> <a>УПРАВЛЕНИЕ КОДОМ</a>  
+                   <li class="technology_list_item "> <a data-content="code">УПРАВЛЕНИЕ КОДОМ</a>  
                   </li>
                    <li class="technology_list_item"><a data-content="methodology"> УПРАВЛЕНИЕ ПРОЕКТАМИ</a>
                   </li>
                    <li class="technology_list_item "><a data-content="search">КОРПОРАТИВНЫЙ ПОИСК</a> 
                   </li>
-                   <li class="technology_list_item"><a> ВЕБ-АНАЛИТИКА</a>
+                   <li class="technology_list_item"><a data-content="analytics"> ВЕБ-АНАЛИТИКА</a>
                   </li>
-                   <li class="technology_list_item"><a>ПРОЕКТИРОВАНИЕ</a> 
+                   <li class="technology_list_item"><a data-content="design">ПРОЕКТИРОВАНИЕ</a> 
                   </li>
                 </ul>
             </div> 
@@ -1201,7 +1220,7 @@
           console.log(window.location.hash );
           if (window.location.hash != '#keys' && window.location.hash != '#work'){
            setTimeout(function() {
-            $('body').css({backgroundColor:'#fff'})
+            $('body').css({backgroundColor:'transparent'})
            },50)
           
           }
