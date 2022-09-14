@@ -320,11 +320,11 @@ footer {
   height: 100%;
 }
 .nav-item ul {
-  margin: 10px 25px 20px 0;
+  margin: 30px 25px 20px 10px;
 }
 .nav-item ul li {
   color: #fff;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 18px;
   position: relative;
 }

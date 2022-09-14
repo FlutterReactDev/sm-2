@@ -224,7 +224,7 @@
     font-size: 32px;
   }
   .team_title span {
-    font-size: 16px;
+    font-size: 14px;
   }
   .team_block_wrap,.team_block_wrap2 {
     padding: 10px 0 10px 0;
@@ -277,7 +277,7 @@
   }
   .btn_key {
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .main_title {
@@ -374,12 +374,10 @@
   }
 
   .btn_top {
-    margin: 0 auto;
-    padding: 12px 0 10px 25px;
+   
+    padding: 19px 0 17px 25px;
   }
-  .btn_key {
-    margin-top: 10px;
-  }
+ 
   .btn_top_wrap {
     display: none;
   }
@@ -447,9 +445,7 @@
   .key_title {
     margin: 0 0 5px 0;
   }
-  .keys_list_wrap {
-    height: 140px;
-  }
+
   .keys_list_item_text {
     font-size: 14px;
   }
@@ -459,9 +455,7 @@
   .keys_list_item {
     padding: 9px 15px;
   }
-  .btn_top {
-    padding: 8px 0 6px 25px;
-  }
+
  
   .blog_feed_title {
     font-size: 24px;
@@ -543,7 +537,9 @@
     padding: 10px;
   }
 
-
+  .btn_key {
+    margin-top: 10px;
+  }
 
   .main_block_wrap {
   }
