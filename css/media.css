@@ -571,6 +571,13 @@
   .dev_top {
     font-size: 13px;
   }
+  .btn_top {
+    padding: 10px 0 10px 25px;
+}
+.btn_top_wrap2 {
+
+  margin: 10px 0 0 0;
+}
   .quiz_step {
     font-size: 12px;
     margin-right: 5px;
@@ -619,7 +626,9 @@
 
 /* Iphone 5.5SE */
 @media screen and (max-width: 320px) {
-
+  .quiz_step {
+    font-size: 10px;
+  }
 }
 
 @media screen and (max-height: 900px) {
