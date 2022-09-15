@@ -156,6 +156,8 @@ function cardsAnimation() {
   }
 }
 function slider() {
+  var progressBarWidth = new Number($('.quiz_progress').css("width").replace('px', ''))/5;
+
   var currentSlide = 0;
   var currentQuiz = 1;
   var currentQuizActive = 0;
@@ -173,6 +175,11 @@ function slider() {
       comment: "",
     },
   };
+
+    $('.brief_quiz_btn-prev').css({
+      display:'none'
+    })
+  
   $(".quiz_content").css({ display: "none" });
   $(".quiz_content").first().css({ display: "block" });
   $(".brief_breadcrumbs_item")
@@ -207,13 +214,32 @@ function slider() {
       .eq(dataQuiz)
       .text(data[dataProp]);
   });
-  $(".brief_quiz_btn-next").click(function () {
-    if (activeElemets[currentSlide]) {
+  $(".quiz_list_item").click(function () {
+   
       nextSlider();
-    }
+     
+      if(currentSlide > 0) {
+        $('.brief_quiz_btn-prev').css({
+          display:'inline-block'
+        })
+      }else {
+        $('.brief_quiz_btn-prev').css({
+          display:'none'
+        })
+      }
   });
   $(".brief_quiz_btn-prev").click(function () {
+   
     prevSlider();
+    if(currentSlide > 0) {
+      $('.brief_quiz_btn-prev').css({
+        display:'inline-block'
+      })
+    }else {
+      $('.brief_quiz_btn-prev').css({
+        display:'none'
+      })
+    }
   });
 
   $(".brief_quiz_btn-submit").click(onSubmit);
@@ -246,7 +272,7 @@ function slider() {
       .eq(currentQuizActive)
       .addClass("brief_breadcrumbs_item--active");
 
-    $(".progress_bar").css({ width: `${(currentSlide + 1) * 60 - 4}` });
+    $(".progress_bar").css({ width: `${(currentSlide + 1) * progressBarWidth - 4}` });
 
     $(".quiz_step span").text(currentSlide + 1);
     $(".quiz_content").eq(currentSlide).attr("data-pass", "true");
@@ -270,7 +296,7 @@ function slider() {
     $(".brief_breadcrumbs_item")
       .eq(currentQuizActive)
       .addClass("brief_breadcrumbs_item--active");
-    $(".progress_bar").css({ width: `${(currentSlide + 1) * 60 - 4}` });
+    $(".progress_bar").css({ width: `${(currentSlide + 1) * progressBarWidth - 4}` });
     $(".quiz_step span").text(currentSlide + 1);
     setTimeout(function () {
       $(".quiz_content").eq(currentSlide).fadeIn();

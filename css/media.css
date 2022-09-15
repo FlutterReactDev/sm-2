@@ -211,6 +211,73 @@
   .dev_top {
     font-size: 13px;
   }
+  .form-group {
+    display: block;
+  }
+  .section_secret  .fp-tableCell{
+    padding: 0;
+  }
+  .secret_code img {
+    max-height: 250px;
+  }
+  .secret_title {
+    font-size: 25px;
+  }
+  .input_group {
+   margin-top: 0;
+   margin-bottom: 10px;
+  }
+  .input_group label {
+    font-size: 12px;
+  }
+  .brief_title {
+    font-size: 32px;
+  }
+  .section_brief .fp-tableCell {
+    padding: 0;
+  }
+  .quiz_content_title {
+    font-size: 24px;
+  }
+  .quiz_list_item {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .brief_quiz {
+    border: none;
+    padding: 0;
+  }
+  .quiz_list_item_name {
+    margin: 0;
+    margin-left: 18px;
+  }
+  .quiz_list_item img {
+    width: 37px;
+    height: 37px;
+  }
+  .quiz_contents {
+    margin-bottom: 30px;
+  }
+  .quiz_content_title {
+    margin-top: 24px;
+  }
+ 
+  .breif_left_icon {
+    display: block;
+    margin-left:auto ;
+  }
+  .quiz_list {
+    display: block;
+  }
+  .quiz_content-mt67 {
+    margin: 0;
+  }
+  .brief_breadcrumbs {
+    display: none;
+  }
   .section_keys2 .fp-tableCell{
     padding: 0;
   }
@@ -494,7 +561,9 @@
   .ind_list_item span {
     font-size: 16px;
   }
- 
+  .quiz_progress {
+    width: 250px;
+  }
 }
 
 /* Iphone 6.7.8 */
@@ -502,11 +571,14 @@
   .dev_top {
     font-size: 13px;
   }
-
+  .quiz_step {
+    font-size: 12px;
+    margin-right: 5px;
+  }
   .main_title {
     font-size: 37px !important;
   }
-
+ 
   .main_img {
     margin: 7px 0 0 0;
   }

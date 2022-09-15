@@ -708,6 +708,7 @@ footer {
   width: calc(100% / 5);
   height: 7px;
   transition: 0.3s;
+  overflow: hidden;
 }
 
 .brief_breadcrumbs {
@@ -753,6 +754,9 @@ footer {
   cursor: pointer;
   border: 2px solid transparent;
 }
+.breif_left_icon {
+  display: none;
+}
 .quiz_list_item--active {
   border: 2px solid #b6f214;
 }
@@ -787,6 +791,9 @@ footer {
 .input_group {
   width: 100%;
   margin-top: 29px;
+}
+.input_checkbox {
+  display: flex;
 }
 .input_group:not(:last-child) {
   margin-right: 30px;
