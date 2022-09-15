@@ -629,6 +629,9 @@
   .quiz_step {
     font-size: 10px;
   }
+  .quiz_step span {
+    font-size: 10px;
+  }
 }
 
 @media screen and (max-height: 900px) {
