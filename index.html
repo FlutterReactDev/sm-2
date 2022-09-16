@@ -18,6 +18,12 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -1188,14 +1194,70 @@
           </div>
         </div>
       </section> 
-       <section class="section section_secret" data-anchor="secret">
+      <section class="section section_secret" data-anchor="secret">
         <div class="secret_wrap">
           <div class="secret">
-            <div class="secret_title">
-              Заголовок для пасхалки
-            </div>
-           <div class="secret_code">
-               <img src="img/secret-code.svg" alt="">
+            <div class="secret_title">Заголовок для пасхалки</div>
+            <div class="secret_code">
+              <div class="code_wrapper">
+                <div class="code_tooltip">
+                  <div class="code_tooltip_top">
+                    <div class="code_tooltip_icon">
+                      <img src="img/copy.svg" alt="" />
+                    </div>
+                    <div class="code_tooltip_icon">
+                      <img src="img/search.svg" alt="" />
+                    </div>
+                    <div class="code_tooltip_icon">
+                      <img src="img/share.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="code_tooltip_user">
+                    <div class="code_tooltip_icon">
+                      <img src="img/code-user.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="code_area">
+                  <div class="area_code">
+                    <span style="color: #f083c3">public function index() </span
+                    ><br />
+                    <span style="color: #000000">-</span><br />
+                    <span style="color: #000000"
+                      >$this-load-›model('feedbac"</span
+                    ><br />
+                    <span style="color: #000000"
+                      >$data['feedbacks'] = $this- fee </span
+                    ><br />
+                    <span style="color: #000000"
+                      ><span style="color: #f083c3">if</span>(count($data['<span
+                        style="color: #807bed"
+                        >feedbacks</span
+                      >']) § </span
+                    ><br />
+                    <span style="color: #000000"
+                      >$this÷load-›view('admin/feedbl</span
+                    ><br />
+                    <span style="color: #000000">try else { </span><br />
+                    <span style="color: #000000">t</span><br />
+                    <span style="color: #f083c3"
+                      >// you can change the new variable </span
+                    ><br />
+                    <span style="color: #f083c3">}</span><br />
+                    <span style="color: #f083c3"
+                      >//Controller Feedback pada method</span
+                    ><br />
+                    <span style="color: #000000"
+                      >$this-load-›view('<span style="color: #807bed"
+                        >/feedback</span
+                      ></span
+                    ><br />
+                  </div>
+                  <div class="code_area_icon code_area_icon-1"></div>
+                  <div class="code_area_icon code_area_icon-2"></div>
+                  <div class="code_area_icon code_area_icon-3"></div>
+                </div>
+              </div>
             </div>
           </div>
           <footer class="footer">
@@ -1203,10 +1265,14 @@
               <ul class="footer_list">
                 <div class="row">
                   <div class="col-md-3">
-                    <li class="footer_list_item footer_list_item-first">2022</li>
+                    <li class="footer_list_item footer_list_item-first">
+                      2022
+                    </li>
                   </div>
                   <div class="col-md-3">
-                    <li class="footer_list_item">Политика конфиденциальности</li>
+                    <li class="footer_list_item">
+                      Политика конфиденциальности
+                    </li>
                   </div>
                   <div class="col-md-3">
                     <li class="footer_list_item footer_list_item-3">
@@ -1214,15 +1280,16 @@
                     </li>
                   </div>
                   <div class="col-md-3">
-                    <li class="footer_list_item footer_list_item-last">mail@mail.com</li>
+                    <li class="footer_list_item footer_list_item-last">
+                      mail@mail.com
+                    </li>
                   </div>
                 </div>
               </ul>
             </div>
           </footer>
         </div>
-        
-      </section> 
+      </section>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -1240,13 +1307,15 @@
     <script src="js/main.js"></script>
     <script>
       $(document).ready(function () {
-        window.addEventListener('hashchange', function () {
-          console.log(window.location.hash );
-          if (window.location.hash != '#keys' && window.location.hash != '#work'){
-           setTimeout(function() {
-            $('body').css({backgroundColor:'transparent'})
-           },20)
-          
+        window.addEventListener("hashchange", function () {
+          console.log(window.location.hash);
+          if (
+            window.location.hash != "#keys" &&
+            window.location.hash != "#work"
+          ) {
+            setTimeout(function () {
+              $("body").css({ backgroundColor: "transparent" });
+            }, 20);
           }
         });
         $("#fullpage").fullpage({
@@ -1259,7 +1328,7 @@
               $(".navbar-brand ").append(
                 ' <img src="img/logo-white.svg" alt=""/>'
               );
-              $('body').css({backgroundColor:'#333'})
+              $("body").css({ backgroundColor: "#333" });
             } else {
               $(".section-nav").removeClass("navbar_white");
               $(".navbar-brand img").remove();
