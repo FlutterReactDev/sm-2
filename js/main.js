@@ -50,11 +50,12 @@ $(document).ready(function () {
   $('.nav-mobi').on('afterChange', function(event, slick, currentSlide){
    tabPane = currentSlide
    tabSlide = slick.$slides[currentSlide].children[0]
-   tabSlide.click()
+  
+ 
+  tabSlide.click()
   });
   $(".nav-link ").click(function (e) {
     $(".nav-link ").removeClass("active");
-    
   });
   $(window).resize(function() {
     if ($(window).width() < 767) {
