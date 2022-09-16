@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  var tabPane = 0;
+  var tabSlide = ''
   $(".anyclass").click(function () {
     // Действие при клике
     $(".anyclass").hide(200); // Действие скрывать
@@ -39,21 +41,20 @@ $(document).ready(function () {
     infinite: false,
     touchMove: false,
     adaptiveHeight: true,
+    swipe:true,
     prevArrow:
       "<button type='button' class='slick-prev pull-left'><img src='img/slider-arrow-left.svg' alt=''/></button>",
     nextArrow:
       "<button type='button' class='slick-next pull-right'><img src='img/slider-arrow-right.svg' alt=''/></button>",
   });
   $('.nav-mobi').on('afterChange', function(event, slick, currentSlide){
-    var currentSlideDom =$(slick.$slides.eq(currentSlide));
-
-    $(currentSlideDom[0]).children().click()
-    
+   tabPane = currentSlide
+   tabSlide = slick.$slides[currentSlide].children[0]
+   tabSlide.click()
   });
   $(".nav-link ").click(function (e) {
     $(".nav-link ").removeClass("active");
-  
-  
+    
   });
   $(window).resize(function() {
     if ($(window).width() < 767) {
