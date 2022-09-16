@@ -284,6 +284,11 @@ footer {
 }
 .nav-mobi {
   display: none !important;
+  position: absolute !important;
+}
+.nav-m {
+
+  height: 285px;
 }
 .nav-tabs {
   border:none;
@@ -533,11 +538,11 @@ footer {
 }
 .section_main2 {
   display: none !important;
+
 }
 
 .btn_top_wrap2 {
   display: none;
-  position: fixed;
 }
 
 .navbar_wrap {
