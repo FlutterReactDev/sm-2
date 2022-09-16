@@ -1264,6 +1264,20 @@ footer {
   background-color: #fff;
   margin-bottom: 144px;
 }
+.section_secret {
+  position: relative;
+
+}
+.section_secret::before {
+  position: absolute;
+  content: "";
+  background:url(../img/secret-shape.svg) no-repeat;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+z-index: -1;
+}
 .code_wrapper {
   display: flex;
 }
