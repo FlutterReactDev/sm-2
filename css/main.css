@@ -284,11 +284,10 @@ footer {
 }
 .nav-mobi {
   display: none !important;
-  position: absolute !important;
-}
-.nav-m {
-
   height: 285px;
+}
+.nav-mobi .slick-list {
+  position: absolute;
 }
 .nav-tabs {
   border:none;

@@ -44,6 +44,12 @@ $(document).ready(function () {
     nextArrow:
       "<button type='button' class='slick-next pull-right'><img src='img/slider-arrow-right.svg' alt=''/></button>",
   });
+  $('.nav-mobi').on('afterChange', function(event, slick, currentSlide){
+    var currentSlideDom =$(slick.$slides.eq(currentSlide));
+
+    $(currentSlideDom[0]).children().click()
+    
+  });
   $(".nav-link ").click(function (e) {
     $(".nav-link ").removeClass("active");
   

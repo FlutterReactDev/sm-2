@@ -58,7 +58,9 @@
   .main_block_wrap {
     margin: 0 0 30px 0;
   }
-
+  .nav-m  {
+    display: block;
+  }
   .row_main2 {
     display: none;
   }
@@ -211,12 +213,16 @@
   .dev_top {
     font-size: 13px;
   }
+  .section_dec .fp-tableCell {
+    padding: 0;
+  }
   .form-group {
     display: block;
   }
   .section_secret  .fp-tableCell{
     padding: 0;
   }
+ 
   .secret_code img {
     max-height: 250px;
   }
