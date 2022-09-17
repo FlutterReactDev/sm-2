@@ -219,10 +219,22 @@
   .section .fp-tableCell{
     padding-top: 61px !important;
   }
-
+  .mobi-row{
+    justify-content: space-between !important;
+    height: 100% !important;
+    
+  }
+  
+  .keys_list, .keys_list .slick-list, .keys_list .slick-list .slick-track{
+    height: 100% !important; 
+  }
+  .keys_list_wrap {
+    height: 100%;
+  }
   .row_main {
     height: 100% !important;
   }
+ 
   .dev_top {
     font-size: 13px;
   }
@@ -332,9 +344,7 @@
   .main_img-mobi {
     display: block;
   }
-  .keys_list_wrap {
-    height: 195px;
-  }
+  
   .key_body {
     font-size: 12px;
     margin: 0 0 5px 0;

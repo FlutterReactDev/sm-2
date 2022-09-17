@@ -31,6 +31,9 @@ $(document).ready(function () {
     $(".anyclass").width(150); // ширина
     $(".anyclass").height(300); // высота
   });
+  // if($(window).width() <= 767) {
+  //   $('.section_keys .container .row').addClass('h-100')
+  // }
   $(".keys_list").slick({
     variableWidth: true,
     arrows: false,
