@@ -1,8 +1,5 @@
 @media screen and (max-height: 880px) {
-  .row_main {
-    margin: 0 0 20px 0 !important;
-    padding: 0 0 20px !important;
-  }
+
 
   .main_img img {
     max-height: 230px;
