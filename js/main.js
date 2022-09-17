@@ -52,11 +52,14 @@ $(document).ready(function () {
   $(".nav-mobi").on("afterChange", function (event, slick, currentSlide) {
     tabPane = currentSlide;
     tabSlide = slick.$slides[currentSlide].children[0];
-
-    tabSlide.click();
+    $(`.tab-pane`).css({display:'none'})
+    $(`.tab-pane[data-slick-index="${tabPane}"]`).fadeTo(50, 0.5).fadeTo(50, 1);
   });
-  $(".nav-link ").click(function (e) {
-    $(".nav-link ").removeClass("active");
+  $(".nav-mobi-wrap .nav-link ").click(function (e) {
+    var tabId = $(e.target).attr('data-slick-index') ? $(e.target).attr('data-slick-index') : $(e.target.parentNode.parentNode).attr('data-slick-index') 
+    $(`.tab-pane`).css({display:'none'})
+    $(`.tab-pane[data-slick-index="${tabId}"]`).fadeTo(50, 0.5).fadeTo(50, 1);
+    
   });
   $(window).resize(function () {
     if ($(window).width() < 767) {

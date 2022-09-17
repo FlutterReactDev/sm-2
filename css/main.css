@@ -875,9 +875,7 @@ footer {
   justify-content: space-between;
   height: 100%;
 }
-.section_secret .footer {
-  margin-bottom: 50px;
-}
+
 .secret {
   display: flex;
   flex-direction: column;
