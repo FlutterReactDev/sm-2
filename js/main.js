@@ -86,7 +86,7 @@ function animateBg() {
       (coordinate2 = 10 * (a -= 1)),
       $(".main_img_1").css(
         "transform",
-        `translate3d(${coordinate1 * 5}px, ${coordinate2 * 5}px, 0)`
+        `translate3d(${coordinate1 * 3}px, ${coordinate2 * 3}px, 0)`
       );
     $(".main_img_2").css(
       "transform",

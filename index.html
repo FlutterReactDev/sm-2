@@ -86,7 +86,7 @@
         </div>
       </div>
     </section>
-    <section></section>
+    
     <div id="fullpage">
       <section class="section section_main" data-anchor="main">
         <div class="container container-lg">
@@ -476,9 +476,9 @@
         
         </div>
       </section>
-      <section class="section section_ind" data-anchor="industries">
-        <div class="container">
-          <div class="row">
+      <section class="section section_ind " data-anchor="industries">
+        <div class="container ">
+          <div class="row " >
             <div class="col-lg-5">
              
               <div class="ind_title">Отрасли</div>
@@ -633,23 +633,26 @@
         </div>
       </section>
 
-      <section class="section section_keys" data-anchor="keys">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="key_title">Кейсы</div>
-              <div class="key_body">
-                Web Software Team - команда разработчиков под руководством Сергея Макаренко, которая занимается ИТ-решениями любого уровня сложности на протяжении уже 8 лет. <br><br>
-
-                Команда специалистов Web Software Team состоит из 10 человек, каждый из которых – настоящий профи в своей уникальной области знаний. Мы всегда готовы воплотить в реальность даже самую сложную задачу – многолетний стаж и высокий профессионализм помогают выполнять работы под ключ в строго оговоренные заказчиком сроки. <br><br>
-
-                Опыт работ в различных сферах бизнеса позволяет быстро понять все нюансы и тонкости работы и выполнить поставленную задачу 
-                на высоком уровне.
-
-              </div>
+      <section class="section section_keys pt-0" data-anchor="keys">
+        <div class="container d-flex h-100">
+          <div class="row justify-content-center align-self-center">
+            <div class="col-md-6 ">
+              
+                <div class="key_title">Кейсы</div>
+                <div class="key_body">
+                  Web Software Team - команда разработчиков под руководством Сергея Макаренко, которая занимается ИТ-решениями любого уровня сложности на протяжении уже 8 лет. <br><br>
+  
+                  Команда специалистов Web Software Team состоит из 10 человек, каждый из которых – настоящий профи в своей уникальной области знаний. Мы всегда готовы воплотить в реальность даже самую сложную задачу – многолетний стаж и высокий профессионализм помогают выполнять работы под ключ в строго оговоренные заказчиком сроки. <br><br>
+  
+                  Опыт работ в различных сферах бизнеса позволяет быстро понять все нюансы и тонкости работы и выполнить поставленную задачу 
+                  на высоком уровне.
+  
+                </div>
+           
+             
               
             </div> 
-            <div class="col-md-6">
+            <div class="col-md-6 ">
               <div class="keys_list">
                 <div class="keys_list_item">
                   <div class="keys_list_wrap">
@@ -708,9 +711,9 @@
           </div>    
       </section>  
       
-      <section class="section section_keys2" data-anchor="work">
-        <div class="container">
-          <div class="row">
+      <section class="section section_keys2 pt-0" data-anchor="work">
+        <div class="container d-flex h-100">
+          <div class="row justify-content-center align-self-center">
             <div class="col-md-6">
               <div class="about_title">Команда</div>
               <div class="team_block_wrap">
@@ -750,9 +753,9 @@
           </div>    
       </section>  
 
-      <section class="section section_about" data-anchor="about">
-        <div class="container">
-          <div class="row">
+      <section class="section section_about pt-0" data-anchor="about">
+        <div class="container d-flex h-100">
+          <div class="row justify-content-center align-self-center">
             <div class="col-md-12">
               <div class="main_title">
                 Принципы
@@ -1307,20 +1310,10 @@
     <script src="js/main.js"></script>
     <script>
       $(document).ready(function () {
-        window.addEventListener("hashchange", function () {
-          console.log(window.location.hash);
-          if (
-            window.location.hash != "#keys" &&
-            window.location.hash != "#work"
-          ) {
-            setTimeout(function () {
-              $("body").css({ backgroundColor: "transparent" });
-            }, 20);
-          }
-        });
+       
         $("#fullpage").fullpage({
           menu: "#navigation",
-
+          
           afterLoad: function (anchor, index) {
             if (index == 5 || index == 6) {
               $(".section-nav").addClass("navbar_white");
@@ -1328,7 +1321,7 @@
               $(".navbar-brand ").append(
                 ' <img src="img/logo-white.svg" alt=""/>'
               );
-              $("body").css({ backgroundColor: "#333" });
+            
             } else {
               $(".section-nav").removeClass("navbar_white");
               $(".navbar-brand img").remove();
