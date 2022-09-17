@@ -55,12 +55,12 @@ $(document).ready(function () {
     $(`.tab-pane`).css({display:'none'})
     $(`.tab-pane[data-slick-index="${tabPane}"]`).fadeTo(50, 0.5).fadeTo(50, 1);
   });
-  $(".nav-mobi-wrap .nav-link ").click(function (e) {
-    var tabId = $(e.target).attr('data-slick-index') ? $(e.target).attr('data-slick-index') : $(e.target.parentNode.parentNode).attr('data-slick-index') 
-    $(`.tab-pane`).css({display:'none'})
-    $(`.tab-pane[data-slick-index="${tabId}"]`).fadeTo(50, 0.5).fadeTo(50, 1);
+  // $(".nav-mobi-wrap .nav-link ").click(function (e) {
+  //   var tabId = $(e.target).attr('data-slick-index') ? $(e.target).attr('data-slick-index') : $(e.target.parentNode.parentNode).attr('data-slick-index') 
+  //   $(`.tab-pane`).css({display:'none'})
+  //   $(`.tab-pane[data-slick-index="${tabId}"]`).fadeTo(50, 0.5).fadeTo(50, 1);
     
-  });
+  // });
   $(window).resize(function () {
     if ($(window).width() < 767) {
       $("canvas").attr("width", "600");
