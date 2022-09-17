@@ -213,19 +213,23 @@
 
 /* Ipad*/
 @media screen and (max-width: 767px) {
+ 
+  
+  
+  .section .fp-tableCell{
+    padding-top: 61px !important;
+  }
+
+  .row_main {
+    height: 100% !important;
+  }
   .dev_top {
     font-size: 13px;
-  }
-  
-  .section_dec .fp-tableCell {
-    padding: 0;
   }
   .form-group {
     display: block;
   }
-  .section_secret .fp-tableCell {
-    padding: 0;
-  }
+
 
   .secret_code img {
     max-height: 250px;
@@ -243,9 +247,7 @@
   .brief_title {
     font-size: 32px;
   }
-  .section_brief .fp-tableCell {
-    padding: 0;
-  }
+
   .quiz_content_title {
     font-size: 24px;
   }
@@ -288,12 +290,6 @@
   .brief_breadcrumbs {
     display: none;
   }
-  .section_keys2 .fp-tableCell {
-    padding: 0;
-  }
-  .section_about .fp-tableCell {
-    padding: 0;
-  }
   .main_img_hero {
     display: none;
   }
@@ -312,7 +308,7 @@
     padding-top: 20px;
   }
   .team_img img {
-    max-height: 300px;
+    max-height: 440px;
   }
   .about_title {
     font-size: 32px;
@@ -429,7 +425,12 @@
   .technology_list {
     display: flex;
   }
-
+  .main_img {
+    display: none;
+  }
+  .main_img-mobi {
+    display: block;
+  }
   .technology_title {
     font-size: 32px;
   }
@@ -467,13 +468,7 @@
     margin: 0 auto;
   }
 
-  .main_title {
-    font-size: 32px !important;
-    line-height: 97.5%;
-    position: relative;
-    font-family: "Jost-SemiBold";
-    margin-bottom: 19px;
-  }
+
 
   .dev_top {
     font-size: 14px;
@@ -569,6 +564,9 @@
     line-height: 18px;
     font-family: "Jost-Light";
     color: #333333;
+  }
+  .section_keys2 .fp-tableCell {
+    padding: 0 !important;
   }
   .about_card img {
     max-height: 150px;

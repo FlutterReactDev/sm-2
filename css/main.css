@@ -185,7 +185,7 @@ footer {
   position: relative;
 }
 .section.pt-0 .fp-tableCell {
-  padding: 0;
+  padding: 0 ;
 }
 .main_img {
   position: relative;
