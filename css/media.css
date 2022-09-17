@@ -1,6 +1,4 @@
 @media screen and (max-height: 880px) {
-
-
   .main_img img {
     max-height: 230px;
   }
@@ -210,36 +208,33 @@
 
 /* Ipad*/
 @media screen and (max-width: 767px) {
- 
-  
-  
-  .section .fp-tableCell{
+  .section .fp-tableCell {
     padding-top: 61px !important;
   }
-  .mobi-row{
+  .mobi-row {
     justify-content: space-between !important;
     flex-direction: column !important;
     height: 100% !important;
-    
   }
-  
-  .keys_list, .keys_list .slick-list, .keys_list .slick-list .slick-track{
-    height: 100% !important; 
+
+  .keys_list,
+  .keys_list .slick-list,
+  .keys_list .slick-list .slick-track {
+    height: 100% !important;
   }
   .keys_list_wrap {
-    height:100% !important; 
+    height: 100% !important;
   }
   .row_main {
     height: 100% !important;
   }
- 
+
   .dev_top {
     font-size: 13px;
   }
   .form-group {
     display: block;
   }
-
 
   .secret_code img {
     max-height: 250px;
@@ -342,7 +337,7 @@
   .main_img-mobi {
     display: block;
   }
-  
+
   .key_body {
     font-size: 12px;
     margin: 0 0 5px 0;
@@ -363,7 +358,7 @@
   }
 
   .main_title {
-    font-size: 45.2609px;
+    font-size: 35px;
     line-height: 97.5%;
     position: relative;
     font-family: "Jost-SemiBold";
@@ -378,8 +373,6 @@
   .row_main {
     margin: 0 0 0 0 !important;
   }
-
-
 
   .nav-tabs .nav-link span {
     font-size: 14px;
@@ -428,6 +421,9 @@
   .row_main2 {
     display: none;
   }
+  .ind_text {
+    font-size: 14px;
+  }
   .technology_list {
     display: flex;
   }
@@ -467,14 +463,11 @@
 
   .btn_top_wrap2 {
     display: block;
-    margin-top: 30px;
     width: 100%;
   }
   .btn_top_wrap2 button {
     margin: 0 auto;
   }
-
-
 
   .dev_top {
     font-size: 14px;
@@ -505,7 +498,6 @@
 
 /* Galaxy S8+*/
 @media screen and (max-width: 480px) {
-
   .card-header button {
     font-size: 14px;
   }
@@ -534,7 +526,6 @@
   .keys_list_item_title {
     font-size: 16px;
   }
-
 
   .blog_feed_title {
     font-size: 24px;
@@ -586,18 +577,14 @@
   .dev_top {
     font-size: 13px;
   }
+
   .btn_top {
     padding: 10px 0 10px 25px;
   }
-  .btn_top_wrap2 {
-    margin: 10px 0 0 0;
-  }
+
   .quiz_step {
     font-size: 12px;
     margin-right: 5px;
-  }
-  .main_title {
-    font-size: 37px !important;
   }
 
   .main_img {
@@ -606,7 +593,6 @@
 
   .btn_top_wrap2 {
     display: block;
-    margin: 20px 0 0 0;
   }
 
   .main_img {
@@ -622,17 +608,13 @@
     margin: 10px 0 0 0;
   }
 
- 
-
-  .main_block_wrap {
+  .section_main2 .main_block_wrap {
     padding: 10px;
   }
 
   .btn_key {
     margin-top: 10px;
   }
-
-
 }
 
 /* Iphone 5.5SE */
