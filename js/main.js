@@ -37,7 +37,6 @@ $(document).ready(function () {
   $(".keys_list").slick({
     variableWidth: true,
     arrows: false,
-    adaptiveHeight: true,
   });
   $(".nav-mobi").slick({
     variableWidth: true,
