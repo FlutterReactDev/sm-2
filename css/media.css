@@ -371,9 +371,7 @@
     margin: 0 0 0 0 !important;
   }
 
-  .main_block_wrap {
-    height: 180px;
-  }
+
 
   .nav-tabs .nav-link span {
     font-size: 14px;
@@ -499,9 +497,7 @@
 
 /* Galaxy S8+*/
 @media screen and (max-width: 480px) {
-  .main_block_wrap {
-    margin: 0 0 10px 0;
-  }
+
   .card-header button {
     font-size: 14px;
   }
@@ -620,9 +616,7 @@
     margin: 10px 0 0 0;
   }
 
-  .main_block_wrap {
-    height: 166px;
-  }
+ 
 
   .main_block_wrap {
     padding: 10px;
@@ -632,8 +626,7 @@
     margin-top: 10px;
   }
 
-  .main_block_wrap {
-  }
+
 }
 
 /* Iphone 5.5SE */

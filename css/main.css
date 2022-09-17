@@ -270,7 +270,7 @@ footer {
   background: #ffffff url(../img/code_top.svg) 14px 93% no-repeat;
   padding: 32px 12px 12px 14px;
   border-radius: 14px;
-  height: 250px;
+  height: 100%;
 }
 
 .main_block_title {
