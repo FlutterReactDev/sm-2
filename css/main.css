@@ -643,12 +643,13 @@ footer {
 
 .section_technology::before {
   content: "";
-  position: absolute;
-  background: url("../img/technology-shape.svg") 0 0 no-repeat;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 63px;
+    position: absolute;
+    background: url(../img/technology-shape.svg) no-repeat;
+    background-position: center bottom;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .technology_title {

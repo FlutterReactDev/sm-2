@@ -1,6 +1,6 @@
 $(document).ready(function () {
   var tabPane = 0;
-  var tabSlide = ''
+  var tabSlide = "";
   $(".anyclass").click(function () {
     // Действие при клике
     $(".anyclass").hide(200); // Действие скрывать
@@ -43,31 +43,30 @@ $(document).ready(function () {
     infinite: false,
     touchMove: false,
     adaptiveHeight: true,
-    swipe:true,
+    swipe: true,
     prevArrow:
       "<button type='button' class='slick-prev pull-left'><img src='img/slider-arrow-left.svg' alt=''/></button>",
     nextArrow:
       "<button type='button' class='slick-next pull-right'><img src='img/slider-arrow-right.svg' alt=''/></button>",
   });
-  $('.nav-mobi').on('afterChange', function(event, slick, currentSlide){
-   tabPane = currentSlide
-   tabSlide = slick.$slides[currentSlide].children[0]
-  
- 
-  tabSlide.click()
+  $(".nav-mobi").on("afterChange", function (event, slick, currentSlide) {
+    tabPane = currentSlide;
+    tabSlide = slick.$slides[currentSlide].children[0];
+
+    tabSlide.click();
   });
   $(".nav-link ").click(function (e) {
     $(".nav-link ").removeClass("active");
   });
-  $(window).resize(function() {
+  $(window).resize(function () {
     if ($(window).width() < 767) {
-      $("canvas").attr("width", '600');
-      $("canvas").attr("height", '500');
-    }else {
-      $("canvas").attr("width", '800');
-      $("canvas").attr("height", '600');
+      $("canvas").attr("width", "600");
+      $("canvas").attr("height", "500");
+    } else {
+      $("canvas").attr("width", "800");
+      $("canvas").attr("height", "600");
     }
-});
+  });
   incTab();
   cardsAnimation();
   slider();
@@ -166,7 +165,8 @@ function cardsAnimation() {
   }
 }
 function slider() {
-  var progressBarWidth = new Number($('.quiz_progress').css("width").replace('px', ''))/5;
+  var progressBarWidth =
+    new Number($(".quiz_progress").css("width").replace("px", "")) / 5;
 
   var currentSlide = 0;
   var currentQuiz = 1;
@@ -186,10 +186,10 @@ function slider() {
     },
   };
 
-    $('.brief_quiz_btn-prev').css({
-      display:'none'
-    })
-  
+  $(".brief_quiz_btn-prev").css({
+    display: "none",
+  });
+
   $(".quiz_content").css({ display: "none" });
   $(".quiz_content").first().css({ display: "block" });
   $(".brief_breadcrumbs_item")
@@ -200,12 +200,18 @@ function slider() {
     var dataValue = "";
     var dataProp = "";
     var dataQuiz = "";
+
     $(".quiz_list_item").removeClass("quiz_list_item--active");
     $(".brief_breadcrumbs_item")
       .eq(currentQuizActive)
       .addClass("brief_breadcrumbs_item--filled");
-
-    if (e.target.parentNode.classList.contains("quiz_list_item")) {
+    if ($(e.target).is("img")) {
+      if(e.target.parentNode.classList.contains('breif_left_icon')) {
+        $(e.target.parentNode.parentNode).addClass("quiz_list_item--active");
+      }
+     
+    }
+    else if (e.target.parentNode.classList.contains("quiz_list_item")) {
       $(e.target.parentNode).addClass("quiz_list_item--active");
       dataValue = $(e.target.parentNode).attr("data-value");
       dataProp = $(e.target.parentNode).attr("data-prop");
@@ -225,30 +231,28 @@ function slider() {
       .text(data[dataProp]);
   });
   $(".quiz_list_item").click(function () {
-   
-      nextSlider();
-     
-      if(currentSlide > 0) {
-        $('.brief_quiz_btn-prev').css({
-          display:'inline-block'
-        })
-      }else {
-        $('.brief_quiz_btn-prev').css({
-          display:'none'
-        })
-      }
+    nextSlider();
+
+    if (currentSlide > 0) {
+      $(".brief_quiz_btn-prev").css({
+        display: "inline-block",
+      });
+    } else {
+      $(".brief_quiz_btn-prev").css({
+        display: "none",
+      });
+    }
   });
   $(".brief_quiz_btn-prev").click(function () {
-   
     prevSlider();
-    if(currentSlide > 0) {
-      $('.brief_quiz_btn-prev').css({
-        display:'inline-block'
-      })
-    }else {
-      $('.brief_quiz_btn-prev').css({
-        display:'none'
-      })
+    if (currentSlide > 0) {
+      $(".brief_quiz_btn-prev").css({
+        display: "inline-block",
+      });
+    } else {
+      $(".brief_quiz_btn-prev").css({
+        display: "none",
+      });
     }
   });
 
@@ -282,7 +286,9 @@ function slider() {
       .eq(currentQuizActive)
       .addClass("brief_breadcrumbs_item--active");
 
-    $(".progress_bar").css({ width: `${(currentSlide + 1) * progressBarWidth - 4}` });
+    $(".progress_bar").css({
+      width: `${(currentSlide + 1) * progressBarWidth - 4}`,
+    });
 
     $(".quiz_step span").text(currentSlide + 1);
     $(".quiz_content").eq(currentSlide).attr("data-pass", "true");
@@ -306,7 +312,9 @@ function slider() {
     $(".brief_breadcrumbs_item")
       .eq(currentQuizActive)
       .addClass("brief_breadcrumbs_item--active");
-    $(".progress_bar").css({ width: `${(currentSlide + 1) * progressBarWidth - 4}` });
+    $(".progress_bar").css({
+      width: `${(currentSlide + 1) * progressBarWidth - 4}`,
+    });
     $(".quiz_step span").text(currentSlide + 1);
     setTimeout(function () {
       $(".quiz_content").eq(currentSlide).fadeIn();
