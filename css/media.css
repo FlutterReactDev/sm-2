@@ -619,11 +619,182 @@
 
 /* Iphone 5.5SE */
 @media screen and (max-width: 320px) {
+  /*section main*/
+  .row_main {
+    margin: 0 !important;
+    padding-bottom: 20px !important;
+  }
+  .dev_top {
+    margin-bottom: 10px;
+    padding: 0 40px;
+  }
+  .main_title {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .main_body {
+    font-size: 16px;
+  }
+  .btn_top {
+    width: 100%;
+    font-size: 16px;
+  }
+  .main_img-mobi img {
+    max-height: 150px;
+  }
+  /*sectin main-2 */
+  .section_main2 .main_block_wrap {
+    padding-top: 5px;
+    padding-left: 5px;
+    margin: 0;
+  }
+  /*section solution */
+  .dec_title {
+    font-size: 32px;
+  }
+  .nav-tabs .nav-link {
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 20px;
+    height: 180px !important;
+    margin: 0 20px 0 0;
+  }
+
+  .nav-mobi-wrap {
+    height: 180px;
+    margin-bottom: 20px;
+  }
+
+  .nav-item ul li {
+    font-size: 12px;
+  }
+  .nav-item ul {
+    margin: 17px 0px 0px 14px;
+  }
+  .tab-pane img {
+    max-height: 150px;
+  }
+  /*industries*/
+  .ind_title {
+    margin-bottom: 10px;
+  }
+  .ind_list_item span {
+    font-size: 14px;
+  }
+  .ind_text {
+    font-size: 12px;
+  }
+  .ind-text-tab p {
+    margin-bottom: 10px;
+  }
+  .ind_icons {
+    height: 60px;
+  }
+  /*section keys */
+  .keys_slide {
+    display: none;
+  }
+  /*section work*/
+  .section_keys2 .fp-tableCell {
+    padding-top: 43px !important;
+  }
+  .about_title {
+    padding: 0px 0 10px 0;
+  }
+  .team_block_wrap,
+  .team_block_wrap2 {
+    padding-top: 5px;
+  }
+  .team_title {
+    font-size: 25px;
+  }
+  .team_title span {
+    font-size: 12px;
+  }
+  .team_img img {
+    max-height: 230px;
+  }
+  /*section about*/
+  .card-header button {
+    font-size: 12px;
+  }
+  .card-body {
+    font-size: 12px;
+  }
+  .about_wrap {
+    display: none;
+  }
+  /*tech section*/
+  .technology_title {
+    font-size: 25px;
+  }
+  .technology_list_item a {
+    padding: 8px 15px;
+  }
+  .technology_list_item {
+    margin: 8px 5px;
+  }
+  /*section breaf*/
+
+  .brief_title {
+    font-size: 25px;
+  }
+  .quiz_content_title {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .quiz_list_item {
+    height: 50px;
+  }
+  .quiz_list_item_name {
+    font-size: 14px;
+  }
+
   .quiz_step {
     font-size: 10px;
   }
   .quiz_step span {
     font-size: 10px;
+  }
+  .form-group {
+    margin: 0;
+  }
+  .form-group label {
+    margin: 0;
+  }
+  .form-group input {
+    margin: 0;
+  }
+  .input_group {
+    margin: 0;
+  }
+  .upload-photo {
+    margin-top: 10px;
+    padding: 5px 15px;
+  }
+  .quiz_contents {
+    margin-bottom: 15px;
+  }
+  .quiz_form_input {
+    padding: 0;
+  }
+  /* secret*/
+  .secret_code {
+    padding: 7px 7px 9px 7px;
+  }
+  .area_code {
+    line-height: 14px;
+  }
+
+  /*footer*/
+  .footer {
+    padding: 0;
+  }
+  .footer_list_item-first {
+    margin-bottom: 8px;
+  }
+  .footer_list_item-last {
+    margin-top: 8px;
   }
 }
 

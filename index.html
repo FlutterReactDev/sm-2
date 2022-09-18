@@ -88,7 +88,7 @@
     </section>
     
     <div id="fullpage">
-      <section class="section section_main" data-anchor="main">
+      <section class="section section_main " data-anchor="main">
         <div class="container container-lg h-100">
           <div class="row_main row pb-5 mb-4">
             <div class="col-md-6">
@@ -650,7 +650,7 @@
              
               
             </div> 
-            <div class="col-md-6 flex-grow-1">
+            <div class="col-md-6 keys_slide flex-grow-1">
               <div class="keys_list ">
                 <div class="keys_list_item ">
                   <div class="keys_list_wrap ">
@@ -702,7 +702,7 @@
                 </div></div>
               </div>
           </div>
-          <div class="row mh-100 d-flex align-self-end row-btn">
+          <div class="row d-flex align-self-end row-btn">
             <div class="col-md-12">
               <button class="btn btn_top btn_key">Смотреть кейсы</button>
             </div>
@@ -1311,7 +1311,7 @@
        
         $("#fullpage").fullpage({
           menu: "#navigation",
-          
+    
           afterLoad: function (anchor, index) {
             if (index == 5 || index == 6) {
               $(".section-nav").addClass("navbar_white");
