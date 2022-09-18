@@ -548,6 +548,15 @@
   .blog_list_item_btn {
     font-size: 10px;
   }
+  .footer {
+    padding: 30px 0;
+  }
+  .nav-mobi-wrap {
+    height: 270px;
+  }
+   .quiz_contents {
+    margin-bottom: 15px;
+   }
 }
 
 /* Galaxy*/
@@ -571,8 +580,7 @@
     width: 250px;
   }
 }
-@media screen and (max-width: 360) {
-}
+
 /* Iphone 6.7.8 */
 @media screen and (max-width: 376px) {
   .dev_top {
@@ -619,15 +627,11 @@
 }
 /*Samsung Galaxy S5/S6/S7*/
 @media screen and (max-width: 360px) {
-  .nav-mobi-wrap {
-    height: 270px;
-  }
+ 
   .quiz_contents {
     margin-bottom: 15px;
   }
-  .footer {
-    padding: 30px 0;
-  }
+  
 }
 
 /* Iphone 5.5SE */
