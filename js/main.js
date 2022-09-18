@@ -212,6 +212,11 @@ function slider() {
       if(e.target.parentNode.classList.contains('breif_left_icon')) {
         $(e.target.parentNode.parentNode).addClass("quiz_list_item--active");
       }
+      else {
+        dataValue = $(e.target.parentNode).attr("data-value");
+        dataProp = $(e.target.parentNode).attr("data-prop");
+        dataQuiz = $(e.target.parentNode).attr("data-quiz");
+      }
      
     }
     else if (e.target.parentNode.classList.contains("quiz_list_item")) {
