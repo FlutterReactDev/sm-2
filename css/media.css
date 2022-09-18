@@ -65,7 +65,9 @@
   .section_main2 {
     display: block !important;
   }
-
+  .section_dec .row{
+    flex-direction: column !important;
+  }
   .nav-tabs .nav-link {
     height: 330px;
   }
@@ -439,7 +441,7 @@
   #myCanvasContainer {
     display: none;
   }
-  .main_block_wrap {
+  .section_main2 .main_block_wrap {
     padding: 12px;
   }
   .icon_top {
