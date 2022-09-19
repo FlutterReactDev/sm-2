@@ -1329,9 +1329,11 @@
         });
        window.addEventListener('resize',function() {
 
-     if (window.matchMedia("(orientation: landscape)").matches) {
-      $.fn.fullpage.setResponsive(true)
-  }
+          if (window.matchMedia("(orientation: landscape)").matches) {
+            $.fn.fullpage.setResponsive(true)
+          }else {
+            $.fn.fullpage.setResponsive(true)
+          }
        })
       });
     </script>
