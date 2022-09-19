@@ -646,6 +646,16 @@
   .btn_key {
     margin-top: 10px;
   }
+  .quiz_form label{
+    margin: 0;
+  }
+  .main_title {
+    margin-bottom:10px ;
+  }
+  .card-body {
+    font-size: 12px;
+    padding: 0px 0 0px 20px;
+}
 }
 
 /* Iphone 5.5SE */
