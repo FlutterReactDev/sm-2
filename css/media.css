@@ -196,9 +196,7 @@
     height: 100% !important; 
     flex-direction: row;
   }
-  .tab-content {
-    align-items:flex-start;
-  }
+  
 }
 
 @media screen and (max-width: 830px) {
@@ -504,6 +502,9 @@
   .blog_list_item_btn {
     font-size: 14px;
   }
+  .tab-pane img {
+    max-height: 300px;
+  }
 }
 
 /* Galaxy S8+*/
@@ -588,6 +589,9 @@
   }
   .quiz_progress {
     width: 250px;
+  }
+  .tab-pane img{
+    max-height: 280px;
   }
 }
 
