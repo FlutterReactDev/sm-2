@@ -408,8 +408,9 @@ footer {
 .tab-content > .tab-pane {
   text-align: center;
   width: 100%;
+  
 }
-.tab-pane img{}
+
 
 .section_dec .fp-tableCell .container .row .col-md-6 {
   padding: 0;

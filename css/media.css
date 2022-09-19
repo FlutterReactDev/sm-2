@@ -98,9 +98,9 @@
     align-items: center;
     padding: 0 0 0 10px;
   }
-  .tab-pane img {
+  /* .tab-pane img {
     max-height: 230px;
-  }
+  } */
   .nav-tabs .nav-link span {
     font-size: 14px;
     line-height: 23px;
@@ -238,9 +238,7 @@
     display: block;
   }
 
-  .secret_code img {
-    max-height: 250px;
-  }
+ 
   .secret_title {
     font-size: 25px;
   }
@@ -417,7 +415,7 @@
     margin-right: 10px;
   }
   .tab-pane img {
-    max-height: 200px;
+    max-height: 330px;
   }
 }
 
@@ -675,7 +673,7 @@
   }
 
   .nav-mobi-wrap {
-    height: 180px;
+    height: 180px  !important;
     margin-bottom: 20px;
   }
 
