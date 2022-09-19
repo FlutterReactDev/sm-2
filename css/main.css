@@ -388,7 +388,7 @@ footer {
 .tab-content {
   height: 100%;
   display: flex;
-  align-items: center;
+  align-items: center !important;
   padding: 0 0 0 80px;
 }
 

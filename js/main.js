@@ -31,7 +31,7 @@ $(document).ready(function () {
     $(".anyclass").width(150); // ширина
     $(".anyclass").height(300); // высота
   });
-
+ 
   $(".keys_list").slick({
     variableWidth: true,
     arrows: false,

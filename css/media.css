@@ -196,6 +196,9 @@
     height: 100% !important; 
     flex-direction: row;
   }
+  .tab-content {
+    align-items: center!important;
+  }
   
 }
 
@@ -421,6 +424,9 @@
   }
   .tab-pane img {
     max-height: 330px;
+  }
+  .tab-content {
+    align-items: flex-start!important;
   }
 }
 
