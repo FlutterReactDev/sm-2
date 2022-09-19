@@ -192,6 +192,13 @@
     font-size: 14px;
     margin: 0 0 10px 0;
   }
+  .row-solution {
+    height: 100% !important; 
+    flex-direction: row;
+  }
+  .tab-content {
+    align-items:flex-start;
+  }
 }
 
 @media screen and (max-width: 830px) {
@@ -589,7 +596,9 @@
   .dev_top {
     font-size: 13px;
   }
-
+  .tab-pane img {
+    max-height:250px;
+  }
   .btn_top {
     padding: 10px 0 10px 25px;
   }
