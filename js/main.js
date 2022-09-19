@@ -61,15 +61,7 @@ $(document).ready(function () {
     $(`.tab-pane[data-slick-index="${tabId}"]`).fadeTo(50, 0.5).fadeTo(50, 1);
     
   });
-  $(window).resize(function () {
-    if ($(window).width() < 767) {
-      $("canvas").attr("width", "600");
-      $("canvas").attr("height", "500");
-    } else {
-      $("canvas").attr("width", "800");
-      $("canvas").attr("height", "600");
-    }
-  });
+  tagCanvasResponse()
   incTab();
   cardsAnimation();
   slider();
@@ -357,4 +349,18 @@ function techSlider() {
   });
 
   $(".technologies_tags").css({ display: "none" });
+}
+
+function tagCanvasResponse() {
+  
+    if ($(window).width() <= 767) {
+      $("canvas").attr("width", "600");
+      $("canvas").attr("height", "500");
+    } 
+
+
+    if($(window).height() <= 600) {
+    
+      $("canvas").attr("height", "400");
+    }
 }

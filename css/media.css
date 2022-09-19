@@ -65,7 +65,7 @@
   .section_main2 {
     display: block !important;
   }
-  .section_dec .row{
+  .section_dec .row {
     flex-direction: column !important;
   }
   .nav-tabs .nav-link {
@@ -416,6 +416,9 @@
     margin-bottom: 5px;
     margin-right: 10px;
   }
+  .tab-pane img {
+    max-height: 200px;
+  }
 }
 
 /* Ipad mini*/
@@ -552,13 +555,13 @@
   }
   .footer {
     padding: 35px 0;
-}
+  }
   .nav-mobi-wrap {
     height: 270px;
   }
-   .quiz_contents {
+  .quiz_contents {
     margin-bottom: 15px;
-   }
+  }
 }
 
 /* Galaxy*/
@@ -627,7 +630,6 @@
     margin-top: 10px;
   }
 }
-
 
 /* Iphone 5.5SE */
 @media screen and (max-width: 320px) {
@@ -825,5 +827,45 @@
 
   .section_keys .fp-tableCell {
     background: #333333;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .section_main2 {
+    display: block !important;
+  }
+  .row_main2 {
+    display: none;
+  }
+  .section_dec .fp-tableCell {
+    padding-top: 61px;
+  }
+  .nav-tabs .nav-link {
+    height: 223px;
+  }
+  .nav-item ul {
+    margin: 6px 0px 0px 10px;
+  }
+  .nav-mobi-wrap {
+    height: 227px;
+  }
+  .secret_code {
+    margin-bottom: 0;
+  }
+  .input_group {
+    margin-bottom: 5px;
+    margin-top: 15px;
+  }
+  .section_brief .fp-tableCell{
+    padding: 43px 0 0 0;
+  }
+  .quiz_contents {
+    margin-bottom: 15px;
+  }
+  .quiz_content-mt67 {
+    margin: 0;
+  }
+  .section_technology .fp-tableCell{
+    padding: 43px 0 0 0;
   }
 }
