@@ -1327,7 +1327,12 @@
             }
           },
         });
-      
+       window.addEventListener('resize',function() {
+
+     if (window.matchMedia("(orientation: landscape)").matches) {
+      $.fn.fullpage.setResponsive(true)
+  }
+       })
       });
     </script>
     <script type="text/javascript">
