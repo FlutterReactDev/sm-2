@@ -193,13 +193,12 @@
     margin: 0 0 10px 0;
   }
   .row-solution {
-    height: 100% !important; 
+    height: 100% !important;
     flex-direction: row;
   }
   .tab-content {
-    align-items: center!important;
+    align-items: center !important;
   }
-  
 }
 
 @media screen and (max-width: 830px) {
@@ -246,7 +245,6 @@
     display: block;
   }
 
- 
   .secret_title {
     font-size: 25px;
   }
@@ -426,7 +424,7 @@
     max-height: 330px;
   }
   .tab-content {
-    align-items: flex-start!important;
+    align-items: flex-start !important;
   }
 }
 
@@ -574,6 +572,16 @@
   .quiz_contents {
     margin-bottom: 15px;
   }
+  .tab-pane img {
+    max-height: 200px;
+  }
+  .card-body {
+    font-size: 12px;
+    padding: 0px 0 0px 20px;
+  }
+  .main_title {
+    margin-bottom: 10px;
+  }
 }
 
 /* Galaxy*/
@@ -596,7 +604,7 @@
   .quiz_progress {
     width: 250px;
   }
-  .tab-pane img{
+  .tab-pane img {
     max-height: 280px;
   }
 }
@@ -607,7 +615,7 @@
     font-size: 13px;
   }
   .tab-pane img {
-    max-height:200px;
+    max-height: 200px;
   }
   .btn_top {
     padding: 10px 0 10px 25px;
@@ -646,16 +654,10 @@
   .btn_key {
     margin-top: 10px;
   }
-  .quiz_form label{
+  .quiz_form label {
     margin: 0;
   }
-  .main_title {
-    margin-bottom:10px ;
-  }
-  .card-body {
-    font-size: 12px;
-    padding: 0px 0 0px 20px;
-}
+
 }
 
 /* Iphone 5.5SE */
@@ -702,7 +704,7 @@
   }
 
   .nav-mobi-wrap {
-    height: 180px  !important;
+    height: 180px !important;
     margin-bottom: 20px;
   }
 
@@ -883,7 +885,7 @@
     margin-bottom: 5px;
     margin-top: 15px;
   }
-  .section_brief .fp-tableCell{
+  .section_brief .fp-tableCell {
     padding: 43px 0 0 0;
   }
   .quiz_contents {
@@ -892,7 +894,7 @@
   .quiz_content-mt67 {
     margin: 0;
   }
-  .section_technology .fp-tableCell{
+  .section_technology .fp-tableCell {
     padding: 43px 0 0 0;
   }
 }
