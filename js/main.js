@@ -111,8 +111,8 @@ function incTab() {
 
     $(IncIconTab).css({ display: "none" });
     $(IncTextTab).css({ display: "none" });
-    $(`.inc_icon_tab[data-content='${data}']`).fadeIn();
-    $(`.ind-text-tab[data-content='${data}']`).fadeIn();
+    $(`.inc_icon_tab[data-content='${data}']`).fadeIn(200);
+    $(`.ind-text-tab[data-content='${data}']`).fadeIn(200);
   });
 
   $(IncIconTab).first().css({display:'block'});
