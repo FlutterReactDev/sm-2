@@ -1,5 +1,4 @@
 @media screen and (max-height: 880px) {
- 
   .btn_top_wrap {
     position: relative;
     margin: 30px 0 0 0;
@@ -224,7 +223,10 @@
   }
   .main_img img {
     max-height: 230px;
-}
+  }
+  .section_about .row {
+    margin-top: 0!important;
+  }
 
   .keys_list,
   .keys_list .slick-list,
@@ -604,7 +606,6 @@
   .quiz_progress {
     width: 250px;
   }
-  
 }
 
 /* Iphone 6.7.8 */
@@ -655,7 +656,6 @@
   .quiz_form label {
     margin: 0;
   }
-
 }
 
 /* Iphone 5.5SE */
