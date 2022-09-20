@@ -115,9 +115,9 @@ function incTab() {
     $(`.ind-text-tab[data-content='${data}']`).fadeIn();
   });
 
-  $(".inc_icon_tab").first().fadeIn();
-  $(".ind-text-tab").fadeOut();
-  $(".ind-text-tab").first().fadeIn();
+  $(IncIconTab).first().css({display:'block'});
+  $(IncTextTab).css({display:'none'});
+  $(IncTextTab).first().css({display:'block'});
 }
 function cardsAnimation() {
   resetCard();
