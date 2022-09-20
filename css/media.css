@@ -216,6 +216,9 @@
   .section .fp-tableCell {
     padding-top: 61px !important;
   }
+  .section-blog, .section_article {
+    padding-top: 61px;
+  }
   .mobi-row {
     justify-content: space-between !important;
     flex-direction: column !important;

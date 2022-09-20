@@ -660,6 +660,8 @@ footer {
 .technology_title {
   font-size: 50px;
   font-family: "Jost-SemiBold";
+  z-index: 9999;
+  position: relative;
 }
 .technologies_modal {
   position: absolute;
@@ -1027,6 +1029,7 @@ footer {
 .section-blog,
 .section_article {
   position: relative;
+  padding-top: 139px;
 }
 .section-blog::before,
 .section_article::before {
