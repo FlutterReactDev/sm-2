@@ -333,7 +333,7 @@ function techSlider() {
   $(".technology_list_item a").click(function (e) {
     e.preventDefault();
     var dataContent = $(e.target).attr("data-content");
-
+    console.log(e.target);
     $(".technologies_modal").css({
       display: "block",
     });
@@ -341,10 +341,13 @@ function techSlider() {
     $(`.technologies_tags[data-content="${dataContent}"]`).css({
       display: "flex",
     });
+    $.fn.fullpage.setAllowScrolling(false)
+    
     $(".tag_close_btn").click(function () {
       $(".technologies_modal").css({
         display: "none",
       });
+      $.fn.fullpage.setAllowScrolling(true)
       $(".technologies_tags").css({ display: "none" });
     });
   });
