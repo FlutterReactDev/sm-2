@@ -189,6 +189,7 @@ footer {
 }
 .main_img {
   position: relative;
+  height: 100%;
 }
 .main_img-mobi {
   display: none;
