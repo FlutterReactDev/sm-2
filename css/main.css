@@ -709,6 +709,7 @@ footer {
   padding: 10px 25px;
   background: #fff;
   font-size: 16px;
+  cursor: pointer;
 }
 .technology_list_item {
   margin: 13px 5px;
