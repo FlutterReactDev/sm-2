@@ -1313,6 +1313,7 @@
         $("#fullpage").fullpage({
           menu: "#navigation",
           responsiveHeight:true,
+          dropEffect: true,
           afterLoad: function (anchor, index) {
             if (index == 5 || index == 6) {
               $(".section-nav").addClass("navbar_white");
@@ -1327,15 +1328,7 @@
               $(".navbar-brand ").append(' <img src="img/logo.svg" alt=""/>');
             }
           },
-          afterResize: function(width, height){
-            if (window.matchMedia("(orientation: landscape)").matches) {
-              $.fn.fullpage.setResponsive(true)
-            }
-            if (window.matchMedia("(orientation: portrait)").matches) {
-              $.fn.fullpage.setResponsive(false)
-            }
-
-            }
+         
         });
      
      
