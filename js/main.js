@@ -31,10 +31,12 @@ $(document).ready(function () {
     $(".anyclass").width(150); // ширина
     $(".anyclass").height(300); // высота
   });
- 
+
   $(".keys_list").slick({
     variableWidth: true,
     arrows: false,
+    touchThreshold:100,
+    slidesToScroll: 1,
   });
   $(".nav-mobi").slick({
     variableWidth: true,
@@ -50,16 +52,17 @@ $(document).ready(function () {
   $(".nav-mobi").on("afterChange", function (event, slick, currentSlide) {
     tabPane = currentSlide;
     tabSlide = slick.$slides[currentSlide].children[0];
-    $(`.tab-pane`).css({display:'none'})
+    $(`.tab-pane`).css({ display: "none" });
     $(`.tab-pane[data-slick-index="${tabPane}"]`).fadeTo(50, 0.5).fadeTo(50, 1);
   });
   $(".nav-mobi-wrap .nav-link ").click(function (e) {
-    var tabId = $(e.target).attr('data-slick-index') ? $(e.target).attr('data-slick-index') : $(e.target.parentNode.parentNode).attr('data-slick-index') 
-    $(`.tab-pane`).css({display:'none'})
+    var tabId = $(e.target).attr("data-slick-index")
+      ? $(e.target).attr("data-slick-index")
+      : $(e.target.parentNode.parentNode).attr("data-slick-index");
+    $(`.tab-pane`).css({ display: "none" });
     $(`.tab-pane[data-slick-index="${tabId}"]`).fadeTo(50, 0.5).fadeTo(50, 1);
-    
   });
-  tagCanvasResponse()
+  tagCanvasResponse();
   incTab();
   cardsAnimation();
   slider();
@@ -93,10 +96,9 @@ function animateBg() {
   }
 }
 function incTab() {
-
-  var indListItem = document.querySelectorAll(".ind_list_item")
-  var IncIconTab = document.querySelectorAll(".inc_icon_tab")
-  var IncTextTab = document.querySelectorAll(".ind-text-tab")
+  var indListItem = document.querySelectorAll(".ind_list_item");
+  var IncIconTab = document.querySelectorAll(".inc_icon_tab");
+  var IncTextTab = document.querySelectorAll(".ind-text-tab");
   $(indListItem).click(function (e) {
     var data = "";
 
@@ -115,9 +117,9 @@ function incTab() {
     $(`.ind-text-tab[data-content='${data}']`).fadeIn(200);
   });
 
-  $(IncIconTab).first().css({display:'block'});
-  $(IncTextTab).css({display:'none'});
-  $(IncTextTab).first().css({display:'block'});
+  $(IncIconTab).first().css({ display: "block" });
+  $(IncTextTab).css({ display: "none" });
+  $(IncTextTab).first().css({ display: "block" });
 }
 function cardsAnimation() {
   resetCard();
@@ -202,17 +204,14 @@ function slider() {
       .eq(currentQuizActive)
       .addClass("brief_breadcrumbs_item--filled");
     if ($(e.target).is("img")) {
-      if(e.target.parentNode.classList.contains('breif_left_icon')) {
+      if (e.target.parentNode.classList.contains("breif_left_icon")) {
         $(e.target.parentNode.parentNode).addClass("quiz_list_item--active");
-      }
-      else {
+      } else {
         dataValue = $(e.target.parentNode).attr("data-value");
         dataProp = $(e.target.parentNode).attr("data-prop");
         dataQuiz = $(e.target.parentNode).attr("data-quiz");
       }
-     
-    }
-    else if (e.target.parentNode.classList.contains("quiz_list_item")) {
+    } else if (e.target.parentNode.classList.contains("quiz_list_item")) {
       $(e.target.parentNode).addClass("quiz_list_item--active");
       dataValue = $(e.target.parentNode).attr("data-value");
       dataProp = $(e.target.parentNode).attr("data-prop");
@@ -341,13 +340,13 @@ function techSlider() {
     $(`.technologies_tags[data-content="${dataContent}"]`).css({
       display: "flex",
     });
-    $.fn.fullpage.setAllowScrolling(false)
-    
+    $.fn.fullpage.setAllowScrolling(false);
+
     $(".tag_close_btn").click(function () {
       $(".technologies_modal").css({
         display: "none",
       });
-      $.fn.fullpage.setAllowScrolling(true)
+      $.fn.fullpage.setAllowScrolling(true);
       $(".technologies_tags").css({ display: "none" });
     });
   });
@@ -356,15 +355,12 @@ function techSlider() {
 }
 
 function tagCanvasResponse() {
-  
-    if ($(window).width() <= 767) {
-      $("canvas").attr("width", "600");
-      $("canvas").attr("height", "500");
-    } 
+  if ($(window).width() <= 767) {
+    $("canvas").attr("width", "600");
+    $("canvas").attr("height", "500");
+  }
 
-
-    if($(window).height() <= 600) {
-    
-      $("canvas").attr("height", "400");
-    }
+  if ($(window).height() <= 600) {
+    $("canvas").attr("height", "400");
+  }
 }

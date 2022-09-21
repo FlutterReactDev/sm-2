@@ -131,7 +131,7 @@
   .navbar-light .navbar-toggler {
     border: none;
     color: #000;
-    padding: 10px 8px 0 0px;
+    padding: 0 8px 0 0px;
     text-align: left;
   }
 
@@ -428,9 +428,7 @@
   .tab-pane img {
     max-height: 330px;
   }
-  .tab-content {
-    align-items: flex-start !important;
-  }
+ 
 }
 
 /* Ipad mini*/

@@ -130,7 +130,6 @@ footer {
   left: 0;
   right: 0;
   z-index: 9999;
-  
 }
 .navbar {
   min-height: 40px;
@@ -142,11 +141,22 @@ footer {
 }
 .navbar-brand svg {
   fill: #333333;
+  
+}
+.navbar .navbar-toggler-icon svg {
+  stroke: #333333;
 }
 .navbar_white .navbar-nav li a {
   color: #fff !important;
 }
-
+.navbar_white svg {
+  fill: #fff;
+  
+}
+.navbar_white .navbar-toggler-icon svg {
+  stroke: #fff;
+  fill:none;
+}
 .navbar .row {
   width: 100%;
 }
@@ -185,7 +195,7 @@ footer {
   position: relative;
 }
 .section.pt-0 .fp-tableCell {
-  padding: 0 ;
+  padding: 0;
 }
 .main_img {
   position: relative;
@@ -409,9 +419,7 @@ footer {
 .tab-content > .tab-pane {
   text-align: center;
   width: 100%;
-  
 }
-
 
 .section_dec .fp-tableCell .container .row .col-md-6 {
   padding: 0;
@@ -510,9 +518,14 @@ footer {
 .inc_icon_tab {
   display: none;
 }
+.keys_slider_wrap {
+  position: absolute;
+  height: 100%;
+}
 
 .keys_list_item {
   padding: 19px 25px;
+  width: 100%;
   border: 1px solid #b6f214;
   border-radius: 13px;
 }
@@ -648,13 +661,13 @@ footer {
 
 .section_technology::before {
   content: "";
-    position: absolute;
-    background: url(../img/technology-shape.svg) no-repeat;
-    background-position: center bottom;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  position: absolute;
+  background: url(../img/technology-shape.svg) no-repeat;
+  background-position: center bottom;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .technology_title {
@@ -1288,23 +1301,22 @@ footer {
   height: 100%;
   border-radius: 9px;
   padding: 24px 30px 13px 20px;
-  
+
   background-color: #fff;
   margin-bottom: 144px;
 }
 .section_secret {
   position: relative;
-
 }
 .section_secret::before {
   position: absolute;
   content: "";
-  background:url(../img/secret-shape.svg) no-repeat;
+  background: url(../img/secret-shape.svg) no-repeat;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-z-index: -1;
+  z-index: -1;
 }
 .code_wrapper {
   display: flex;
@@ -1331,7 +1343,6 @@ z-index: -1;
 }
 .code_area {
   padding-left: 35px;
-  
 }
 .code_area_icon {
   height: 20px;
