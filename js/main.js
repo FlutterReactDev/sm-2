@@ -35,7 +35,7 @@ $(document).ready(function () {
   $(".keys_list").slick({
     variableWidth: true,
     arrows: false,
-    touchThreshold:100,
+    touchThreshold: 100,
     slidesToScroll: 1,
   });
   $(".nav-mobi").slick({
@@ -68,6 +68,7 @@ $(document).ready(function () {
   slider();
   animateBg();
   techSlider();
+  typingAnimation();
 });
 function animateBg() {
   $(document).mousemove(function (n) {
@@ -363,4 +364,14 @@ function tagCanvasResponse() {
   if ($(window).height() <= 600) {
     $("canvas").attr("height", "400");
   }
+}
+
+function typingAnimation() {
+  var typed = new Typed(".area_code", {
+    strings: [
+      `<span style="color: #f083c3">public function index() </span><br /><span style="color: #000000">-</span><br /><span style="color: #000000">$this-load-›model('feedbac"</span><br /><span style="color: #000000">$data['feedbacks'] = $this- fee </span><br /><span style="color: #000000"><span style="color: #f083c3">if</span>(count($data['<span style="color: #807bed">feedbacks</span>']) § </span><br /><span style="color: #000000">$this÷load-›view('admin/feedbl</span><br /><span style="color: #000000">try else { </span><br /><span style="color: #000000">t</span><br /><span style="color: #f083c3">// you can change the new variable </span><br /><span style="color: #f083c3">}</span><br /><span style="color: #f083c3">//Controller Feedback pada method</span><br /><span style="color: #000000">$this-load-›view('<span style="color: #807bed">/feedback</span></span><br />`,
+      `<span style="color: #f083c3">public function index() </span><br /><span style="color: #000000">-</span><br /><span style="color: #000000">$this-load-›model('feedbac"</span><br /><span style="color: #000000">$data['feedbacks'] = $this- fee </span><br /><span style="color: #000000"><span style="color: #f083c3">if</span>(count($data['<span style="color: #807bed">feedbacks</span>']) § </span><br /><span style="color: #000000">$this÷load-›view('admin/feedbl</span><br /><span style="color: #000000">try else { </span><br /><span style="color: #000000">t</span><br /><span style="color: #f083c3">// you can change the new variable </span><br /><span style="color: #f083c3">}</span><br /><span style="color: #f083c3">//Controller Feedback pada method</span><br /><span style="color: #000000">$this-load-›view('<span style="color: #807bed">/feedback</span></span><br />`,
+    ],
+    loop: true,
+  });
 }

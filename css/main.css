@@ -1344,6 +1344,9 @@ footer {
 .code_area {
   padding-left: 35px;
 }
+.code_area {
+  width: 377px;
+}
 .code_area_icon {
   height: 20px;
   background: #e4e4e4;

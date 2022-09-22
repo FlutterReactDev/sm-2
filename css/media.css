@@ -585,6 +585,9 @@
   .main_title {
     margin-bottom: 10px;
   }
+  .code_area {
+    width: 280px;
+}
 }
 
 /* Galaxy*/
@@ -607,6 +610,9 @@
   .quiz_progress {
     width: 250px;
   }
+  .code_area {
+    width: 230px;
+}
 }
 
 /* Iphone 6.7.8 */
