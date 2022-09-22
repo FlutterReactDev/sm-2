@@ -373,5 +373,6 @@ function typingAnimation() {
       `<span style="color: #f083c3">public function index() </span><br /><span style="color: #000000">-</span><br /><span style="color: #000000">$this-load-›model('feedbac"</span><br /><span style="color: #000000">$data['feedbacks'] = $this- fee </span><br /><span style="color: #000000"><span style="color: #f083c3">if</span>(count($data['<span style="color: #807bed">feedbacks</span>']) § </span><br /><span style="color: #000000">$this÷load-›view('admin/feedbl</span><br /><span style="color: #000000">try else { </span><br /><span style="color: #000000">t</span><br /><span style="color: #f083c3">// you can change the new variable </span><br /><span style="color: #f083c3">}</span><br /><span style="color: #f083c3">//Controller Feedback pada method</span><br /><span style="color: #000000">$this-load-›view('<span style="color: #807bed">/feedback</span></span><br />`,
     ],
     loop: true,
+   
   });
 }
