@@ -1343,9 +1343,10 @@ footer {
 }
 .code_area {
   padding-left: 35px;
-}
-.code_area {
   width: 377px;
+}
+.typed-cursor {
+  display: none;
 }
 .code_area_icon {
   height: 20px;
