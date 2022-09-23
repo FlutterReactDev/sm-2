@@ -66,12 +66,7 @@ $(document).ready(function () {
     $(`.tab-pane`).css({ display: "none" });
     $(`.tab-pane[data-slick-index="${tabId}"]`).fadeTo(50, 0.5).fadeTo(50, 1);
   });
-  $('.card').click(function() {
-    $('.card').css({opacity:1,transform: 'none'})
-    $('.about_card').css({opacity:1,transform: 'none'})
-    $('.main_title').css({opacity:1,transform: 'none'})
-  })
-
+ 
 
   tagCanvasResponse();
   incTab();
