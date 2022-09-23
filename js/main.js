@@ -1,6 +1,8 @@
 $(document).ready(function () {
   var tabPane = 0;
   var tabSlide = "";
+  AOS.init();
+  console.log(AOS);
   $(".anyclass").click(function () {
     // Действие при клике
     $(".anyclass").hide(200); // Действие скрывать
@@ -62,6 +64,13 @@ $(document).ready(function () {
     $(`.tab-pane`).css({ display: "none" });
     $(`.tab-pane[data-slick-index="${tabId}"]`).fadeTo(50, 0.5).fadeTo(50, 1);
   });
+  $('.card').click(function() {
+    $('.card').css({opacity:1,transform: 'none'})
+    $('.about_card').css({opacity:1,transform: 'none'})
+    $('.main_title').css({opacity:1,transform: 'none'})
+  })
+
+
   tagCanvasResponse();
   incTab();
   cardsAnimation();
@@ -376,3 +385,4 @@ function typingAnimation() {
    
   });
 }
+
