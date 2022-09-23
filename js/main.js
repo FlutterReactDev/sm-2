@@ -66,7 +66,8 @@ $(document).ready(function () {
     $(`.tab-pane`).css({ display: "none" });
     $(`.tab-pane[data-slick-index="${tabId}"]`).fadeTo(50, 0.5).fadeTo(50, 1);
   });
- 
+
+
 
   tagCanvasResponse();
   incTab();

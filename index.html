@@ -893,20 +893,20 @@
             <div class="col-md-6">
               <div class="about_wrap">
                 <div class="about_cards">
-                  <div class="about_card" data-aos="fade-down"     data-aos-delay="50" data-card="1">
-                    <img src="img/card1.png" alt=""/>
+                  <div class="about_card"  data-card="1">
+                    <img data-aos="fade-down"     data-aos-delay="50" src="img/card1.png" alt=""/>
                   </div>
-                  <div class="about_card" data-aos="fade-down"     data-aos-delay="150" data-card="2">
-                    <img src="img/card2.png" alt=""/>
+                  <div class="about_card"  data-card="2">
+                    <img data-aos="fade-down"     data-aos-delay="150" src="img/card2.png" alt=""/>
                   </div>
-                  <div class="about_card" data-aos="fade-down"     data-aos-delay="250" data-card="3">
-                    <img src="img/card3.png" alt=""/>
+                  <div class="about_card"  data-card="3">
+                    <img data-aos="fade-down"     data-aos-delay="250" src="img/card3.png" alt=""/>
                   </div>
-                  <div class="about_card" data-aos="fade-down"     data-aos-delay="350" data-card="4">
-                    <img src="img/card4.png" alt=""/>
+                  <div class="about_card"  data-card="4">
+                    <img data-aos="fade-down"     data-aos-delay="350" src="img/card4.png" alt=""/>
                   </div>
-                  <div class="about_card" data-aos="fade-down"     data-aos-delay="450"  data-card="5">
-                    <img src="img/card5.png" alt=""/>
+                  <div class="about_card"   data-card="5">
+                    <img data-aos="fade-down"    data-aos-delay="450" src="img/card5.png" alt=""/>
                   </div>
                 </div>
               </div>
@@ -1369,10 +1369,14 @@ afterSlideLoad: function(){
         $(this).addClass("aos-animate")
     });
 },
-afterLoad: function(){
+afterLoad: function(i){
+ 
     $('.section.active [data-aos]').each(function(){
         $(this).addClass("aos-animate")
     });
+
+
+  
 }
         });
       });
