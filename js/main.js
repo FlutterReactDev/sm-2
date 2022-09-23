@@ -1,7 +1,9 @@
 $(document).ready(function () {
   var tabPane = 0;
   var tabSlide = "";
-  AOS.init();
+  AOS.init({
+    once: true,
+  });
   console.log(AOS);
   $(".anyclass").click(function () {
     // Действие при клике
