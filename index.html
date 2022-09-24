@@ -34,6 +34,9 @@
   </head>
 
   <body>
+    <div id="preloader">
+      
+    </div>
     <section class="section-nav">
       <div class="container">
         <div class="row">
@@ -527,9 +530,9 @@
         
         </div>
       </section>
-      <section class="section section_ind " data-anchor="industries">
-        <div class="container ">
-          <div class="row " >
+      <section class="section section_ind pt-0" data-anchor="industries">
+        <div class="container  d-flex h-100">
+          <div class="row  justify-content-center align-self-center" >
             <div class="col-lg-5 " data-aos="zoom-in">
              
               <div class="ind_title">Отрасли</div>
@@ -807,9 +810,9 @@
           </div>    
       </section>  
 
-      <section class="section section_about " data-anchor="about">
-        <div class="container d-flex ">
-          <div class="row  mt-5">
+      <section class="section section_about pt-0" data-anchor="about">
+        <div class="container d-flex h-100">
+          <div class="row justify-content-center align-self-center ">
             <div class="col-md-12" >
               <div class="main_title" data-aos="fade-right">
                 Принципы
@@ -1058,9 +1061,9 @@
           </div>
         </div>
       </section> 
-     <section class="section section_brief" data-anchor="brief">
-        <div class="container">
-          <div class="row">
+     <section class="section section_brief pt-0" data-anchor="brief">
+        <div class="container d-flex h-100">
+          <div class="row justify-content-center align-self-center">
             <div class="col-md-12" data-aos="fade-right"  >
               <div class="brief_title">Заполните бриф</div>
               <div class="brief_quiz">
@@ -1403,6 +1406,11 @@ afterLoad: function(i){
         }
       });
     </script>
-   
+    <script>
+      var loader = document.querySelector('#preloader')
+      window.addEventListener("load",function() {
+        loader.style.display = 'none'
+      })
+    </script>
   </body>
 </html>
