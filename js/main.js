@@ -1,39 +1,7 @@
 $(document).ready(function () {
   var tabPane = 0;
-  var tabSlide = "";
   AOS.init({
     once: true,
-  });
-  console.log(AOS);
-  $(".anyclass").click(function () {
-    // Действие при клике
-    $(".anyclass").hide(200); // Действие скрывать
-    $(".anyclass").show(200); // Действие показывать
-    $(".anyclass").fadeOut(300); // Плавное исчезновение
-    $(".anyclass").fadeIn(300); // Плавное показ
-    $(".anyclass").fadeTo(300, 0.5).fadeTo(300, 1); // Исчезновение и Показ
-
-    $(".anyclass").css({
-      // Css свойства
-      display: "flex",
-    });
-
-    $(".anyclass").animate(
-      {
-        // анимирование на высоту или ширину
-        display: "flex",
-      },
-      3000
-    );
-
-    $(".anyclass").slideUp(300); // Сворачивать Скрывать с верху
-
-    $(".anyclass").slideDown(300); // Сворачивать Показывать с верху
-
-    $(".anyclass").text(Hi); // текст
-
-    $(".anyclass").width(150); // ширина
-    $(".anyclass").height(300); // высота
   });
 
   $(".keys_list").slick({
@@ -42,30 +10,7 @@ $(document).ready(function () {
     touchThreshold: 100,
     slidesToScroll: 1,
   });
-  $(".nav-mobi").slick({
-    variableWidth: true,
-    infinite: false,
-    touchMove: false,
-    adaptiveHeight: true,
-    swipe: true,
-    prevArrow:
-      "<button type='button' class='slick-prev pull-left'><img src='img/slider-arrow-left.svg' alt=''/></button>",
-    nextArrow:
-      "<button type='button' class='slick-next pull-right'><img src='img/slider-arrow-right.svg' alt=''/></button>",
-  });
-  $(".nav-mobi").on("afterChange", function (event, slick, currentSlide) {
-    tabPane = currentSlide;
-    tabSlide = slick.$slides[currentSlide].children[0];
-    $(`.tab-pane`).css({ display: "none" });
-    $(`.tab-pane[data-slick-index="${tabPane}"]`).fadeTo(50, 0.5).fadeTo(50, 1);
-  });
-  $(".nav-mobi-wrap .nav-link ").click(function (e) {
-    var tabId = $(e.target).attr("data-slick-index")
-      ? $(e.target).attr("data-slick-index")
-      : $(e.target.parentNode.parentNode).attr("data-slick-index");
-    $(`.tab-pane`).css({ display: "none" });
-    $(`.tab-pane[data-slick-index="${tabId}"]`).fadeTo(50, 0.5).fadeTo(50, 1);
-  });
+  tabMobiChange()
 
 
 
@@ -104,30 +49,41 @@ function animateBg() {
   }
 }
 function incTab() {
-  var indListItem = document.querySelectorAll(".ind_list_item");
-  var IncIconTab = document.querySelectorAll(".inc_icon_tab");
-  var IncTextTab = document.querySelectorAll(".ind-text-tab");
-  $(indListItem).click(function (e) {
-    var data = "";
-
-    $(indListItem).removeClass("ind_list_item--active");
+  var t = document.querySelectorAll(".ind_list_item"),
+  a = document.querySelectorAll(".inc_icon_tab"),
+  indText = document.querySelectorAll(".ind-text-tab");
+var i = "";
+for (let ind = 0; ind < t.length; ind++) {
+  t[ind].addEventListener("click", function (e) {
+     
+    for (let i = 0; i < t.length; i++) {
+      t[i].classList.remove("ind_list_item--active");
+    }
     if (e.target.parentNode.classList.contains("ind_list_item")) {
       e.target.parentNode.classList.add("ind_list_item--active");
-      data = $(e.target.parentNode).attr("data-tab");
+      i = e.target.parentNode.getAttribute("data-tab");
     } else {
       e.target.classList.add("ind_list_item--active");
-      data = $(e.target).attr("data-tab");
+      i = e.target.getAttribute("data-tab");
     }
-
-    $(IncIconTab).css({ display: "none" });
-    $(IncTextTab).css({ display: "none" });
-    $(`.inc_icon_tab[data-content='${data}']`).fadeIn(200);
-    $(`.ind-text-tab[data-content='${data}']`).fadeIn(200);
+    for (let i = 0; i < a.length; i++) {
+      a[i].style.display = "none";
+     
+    }
+    for (let i = 0; i < indText.length; i++) {
+     
+      indText[i].style.display = "none";
+    }
+    $(`.inc_icon_tab[data-content='${i}']`).fadeIn(200),
+      $(`.ind-text-tab[data-content='${i}']`).fadeIn(200);
   });
+}
 
-  $(IncIconTab).first().css({ display: "block" });
-  $(IncTextTab).css({ display: "none" });
-  $(IncTextTab).first().css({ display: "block" });
+a[0].style.display = "block";
+for (let i = 0; i < indText.length; i++) {
+  indText[i].style.display = "none";
+}
+indText[0].style.display = "block";
 }
 function cardsAnimation() {
   resetCard();
@@ -270,6 +226,7 @@ function slider() {
   }
   function nextSlider() {
     $(".quiz_content").eq(currentSlide).fadeOut();
+    
     $(".brief_breadcrumbs_item").removeClass("brief_breadcrumbs_item--active");
     itemPick = "";
     currentSlide++;
@@ -384,3 +341,46 @@ function typingAnimation() {
   });
 }
 
+function tabMobiChange() {
+  var tabPaneList = document.querySelectorAll('.tab-pane')
+  var navLinks = document.querySelectorAll('.nav-mobi-wrap .nav-link')
+  
+  $(".nav-mobi").slick({
+    variableWidth: true,
+    infinite: false,
+    touchMove: false,
+    adaptiveHeight: true,
+    swipe: true,
+    prevArrow:
+      "<button type='button' class='slick-prev pull-left'><img src='img/slider-arrow-left.svg' alt=''/></button>",
+    nextArrow:
+      "<button type='button' class='slick-next pull-right'><img src='img/slider-arrow-right.svg' alt=''/></button>",
+  });
+  $(".nav-mobi").on("afterChange", function (event, slick, currentSlide) {
+    tabPane = currentSlide;
+    tabSlide = slick.$slides[currentSlide].children[0];
+    hideElem(tabPaneList)
+    showElem(tabPaneList,tabPane)
+  });
+  $(navLinks).click(function (e) {
+    var tabId = e.target.getAttribute("data-slick-index")
+      ? e.target.getAttribute("data-slick-index")
+      : e.target.parentNode.parentNode.getAttribute("data-slick-index");
+
+      hideElem(tabPaneList)
+      showElem(tabPaneList,tabId)
+  });
+
+  function hideElem(elem) {
+    for(let i =0;i < elem.length;i++) {
+      tabPaneList[i].style.display = 'none'
+    }
+  }
+  function showElem(elem,tabIndex) {
+    for(let i =0; i < elem.length;i++) {
+      if(elem[i].dataset.slickIndex == tabIndex) {
+        $(elem[i]).fadeTo(50, 0.5).fadeTo(50, 1);
+      }
+    }
+  }
+}
