@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var tabPane = 0;
+
   AOS.init({
     once: true,
   });
@@ -11,11 +11,9 @@ $(document).ready(function () {
     slidesToScroll: 1,
   });
   tabMobiChange()
-
-
-
   tagCanvasResponse();
   incTab();
+
   cardsAnimation();
   slider();
   animateBg();
@@ -50,51 +48,45 @@ function animateBg() {
 }
 function incTab() {
   var t = document.querySelectorAll(".ind_list_item"),
-  a = document.querySelectorAll(".inc_icon_tab"),
+  a = document.querySelectorAll(".ind_icon_tab"),
   indText = document.querySelectorAll(".ind-text-tab");
-var i = "";
+ 
+  var dataIndex = ''
+  var currentActiveInd = 0
 for (let ind = 0; ind < t.length; ind++) {
   t[ind].addEventListener("click", function (e) {
-     
-    for (let i = 0; i < t.length; i++) {
-      t[i].classList.remove("ind_list_item--active");
-    }
+      t[currentActiveInd].classList.remove("ind_list_item--active");
     if (e.target.parentNode.classList.contains("ind_list_item")) {
       e.target.parentNode.classList.add("ind_list_item--active");
-      i = e.target.parentNode.getAttribute("data-tab");
+      dataIndex = e.target.parentNode.dataset.contentIndex   
     } else {
       e.target.classList.add("ind_list_item--active");
-      i = e.target.getAttribute("data-tab");
+      dataIndex = e.target.dataset.contentIndex      
     }
-    for (let i = 0; i < a.length; i++) {
-      a[i].style.display = "none";
-     
-    }
-    for (let i = 0; i < indText.length; i++) {
-     
-      indText[i].style.display = "none";
-    }
-    $(`.inc_icon_tab[data-content='${i}']`).fadeIn(200),
-      $(`.ind-text-tab[data-content='${i}']`).fadeIn(200);
+      a[currentActiveInd].style.display = "none";
+      indText[currentActiveInd].style.display = "none";
+      currentActiveInd = dataIndex
+    $(a[currentActiveInd]).fadeIn(200),
+      $(indText[currentActiveInd]).fadeIn(200);
   });
 }
 
 a[0].style.display = "block";
-for (let i = 0; i < indText.length; i++) {
-  indText[i].style.display = "none";
-}
 indText[0].style.display = "block";
 }
+
 function cardsAnimation() {
+  var card = document.querySelector('.about_cards')
+  var cards = document.querySelectorAll('.about_card') 
+  var accardionCard = document.querySelectorAll('.card ')
   resetCard();
-  $(".card").click(function (e) {
-    if ($(e.target).attr("data-card")) {
-      var cardID = $(e.target).attr("data-card");
-      $(`.about_card[data-card="${cardID}"]`).remove();
-      $(".about_cards").prepend(createCard(cardID));
+  $(accardionCard).click(function (e) {
+    if (e.target.dataset.card) {
+      var cardID = e.target.dataset.card;
+      $(cards[cardID-1]).remove();
+      $(card).prepend(createCard(cardID));
 
       resetCard();
-
       // $(`.about_card[data-card="${cardID}"]`).animate({
       //   top: '150px',
       //   left:'350px'
@@ -108,7 +100,7 @@ function cardsAnimation() {
   });
   function resetCard() {
     var maxIndex = 5;
-    $(".about_card").each(function (item) {
+    $(cards).each(function (item) {
       $(".about_card")
         .eq(item)
         .css({
@@ -126,6 +118,7 @@ function cardsAnimation() {
   </div>`;
   }
 }
+
 function slider() {
   var progressBarWidth =
     new Number($(".quiz_progress").css("width").replace("px", "")) / 5;
@@ -293,30 +286,33 @@ function slider() {
     }
   }
 }
+
 function techSlider() {
-  $(".technology_list_item a").click(function (e) {
+  var techItem = document.querySelectorAll(".technology_list_item a")
+  var techModal = document.querySelector(".technologies_modal")
+  var techTags = document.querySelectorAll(".technologies_tags")
+  var dataIndex= ''
+  $(techItem).click(function (e) {
     e.preventDefault();
-    var dataContent = $(e.target).attr("data-content");
-    console.log(e.target);
-    $(".technologies_modal").css({
-      display: "block",
-    });
-
-    $(`.technologies_tags[data-content="${dataContent}"]`).css({
-      display: "flex",
-    });
+    
+    dataIndex = e.target.dataset.contentIndex
+    openModal()
+    techTags[dataIndex].style.display = 'flex'
     $.fn.fullpage.setAllowScrolling(false);
-
-    $(".tag_close_btn").click(function () {
-      $(".technologies_modal").css({
-        display: "none",
-      });
-      $.fn.fullpage.setAllowScrolling(true);
-      $(".technologies_tags").css({ display: "none" });
-    });
   });
 
-  $(".technologies_tags").css({ display: "none" });
+  $(".tag_close_btn").click(function () {
+    closeModal()
+    $.fn.fullpage.setAllowScrolling(true);
+    techTags[dataIndex].style.display = 'none'
+  });
+
+  function openModal() {
+    techModal.style.display = 'block'
+  }
+  function closeModal() {
+    techModal.style.display = 'none'
+  }
 }
 
 function tagCanvasResponse() {
@@ -350,6 +346,7 @@ function tabMobiChange() {
     infinite: false,
     touchMove: false,
     adaptiveHeight: true,
+    touchThreshold: 100,
     swipe: true,
     prevArrow:
       "<button type='button' class='slick-prev pull-left'><img src='img/slider-arrow-left.svg' alt=''/></button>",

@@ -498,6 +498,12 @@ footer {
   justify-content: center;
   color: #000;
 }
+.ind-text-tab {
+  display: none;
+}
+.ind_icon_tab {
+  display: none;
+}
 
 .ind_icons {
   display: flex;
@@ -694,7 +700,7 @@ footer {
   padding: 0 15px;
 }
 .technologies_tags {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   position: relative;
 }
@@ -714,7 +720,7 @@ footer {
   margin: 6px 6px;
 }
 .technology_list {
-  display: flex;
+ 
   flex-wrap: wrap;
   display: none;
   justify-content: center;

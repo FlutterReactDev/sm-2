@@ -454,6 +454,9 @@
   #myCanvasContainer {
     display: none;
   }
+  #tags {
+    display: none;
+  }
   .section_main2 .main_block_wrap {
     padding: 12px;
   }
