@@ -324,6 +324,10 @@ function tagCanvasResponse() {
   if ($(window).height() <= 600) {
     $("canvas").attr("height", "400");
   }
+  if($(window).width() <= 640) {
+    $("#myCanvasContainer").hide();
+  }
+ 
 }
 
 function typingAnimation() {
